@@ -1,187 +1,191 @@
-version: "3.1"
+version: '3.1'
 nlu:
 - intent: alarm_set
-  examples: |
-    - wake me up at five am this week
-    - wake me up at nine am on friday
-    - set an alarm for two hours from now
-    - set an alarm for twelve
-    - set an alarm forty minutes from now
-    - set alarm for eight every weekday
-    - set alarm at ten am
-    - set alarm tomorrow at six am
-    - set wake up thursday seven am
-    - set an alarm at six in the morning
-    - set an alarm for four in the afternoon
-    - olly alert me at three p. m. to go to the concert
-    - alert me at three p. m. to go to the concert
-    - set an alarm for me at eight am
-    - make an alarm for four p. m.
-    - make me a wake up alarm for eight forty five am
-    - set an alarm for nine am
-    - set a wake up call for ten am
-    - i need a reminder alarm at one
-    - make an alarm for three p. m.
-    - turn on an alarm for nine am
-    - set an alarm for one p. m.
+  examples:
+    - wake me up at [five_am](time) [this_week](date)
+    - wake me up at [nine_am](time) on [friday](date)
+    - set an alarm for [two_hours_from_now](time)
+    - set an alarm for [twelve](time)
+    - set an alarm [forty_minutes_from_now](time)
+    - set alarm for [eight](time) [every_weekday](general_frequency)
+    - set alarm at [ten_am](time)
+    - set alarm [tomorrow](date) at [six_am](time)
+    - set wake up [thursday](date) [seven_am](time)
+    - set an alarm at [six](time) in the [morning](timeofday)
+    - set an alarm for [four](time) in the [afternoon](timeofday)
+    - olly alert me at [three_p._m.](time) to go to the [concert](event_name)
+    - alert me at [three_p._m.](time) to go to the [concert](event_name)
+    - set an alarm for me at [eight_am](time)
+    - make an alarm for [four_p._m.](time)
+    - make me a wake up alarm for [eight_forty_five_am](time)
+    - set an alarm for [nine_am](time)
+    - set a wake up call for [ten_am](time)
+    - i need a reminder alarm at [one](time)
+    - make an alarm for [three_p._m.](time)
+    - turn on an alarm for [nine_am](time)
+    - set an alarm for [one_p._m.](time)
     - start alarm
     - set alarm to begin
-    - change alarm to start at midnight
-    - i want to wake up at six am tomorrow please
-    - please set the alarm for next morning to seven am
-    - please ring the wake up alarm at eight am next saturday
-    - create an alarm at four o'clock tomorrow morning
-    - make an alarm to wake me up after five hours
-    - schedule an alarm to wake me up after three hours
-    - set alarm for eight am
-    - alarm set eight am
-    - set my alarm for seven am
-    - turn my morning alarm on
+    - change alarm to start at [midnight](time)
+    - i want to wake up at [six_am](time) [tomorrow](date) please
+    - please set the alarm for [next_morning](timeofday) to [seven_am](time)
+    - please ring the [wake_up](alarm_type) alarm at [eight_am](time) next [saturday](date)
+    - create an alarm at [four](time) o'clock [tomorrow](date) [morning](timeofday)
+    - make an alarm to wake me up [after_five_hours](time)
+    - schedule an alarm to wake me up [after_three_hours](time)
+    - set alarm for [eight_am](time)
+    - alarm set [eight_am](time)
+    - set my alarm for [seven_am](time)
+    - turn my [morning](timeofday) alarm on
     - set my alarm please
-    - set the alarm for five o'clock in the morning
-    - set my alarm for six thirty in the morning tomorrow
-    - i want the alarm set for six
+    - set the alarm for [five](time) o'clock in the [morning](timeofday)
+    - set my alarm for [six_thirty](time) in the [morning](timeofday) [tomorrow](date)
+    - i want the alarm set for [six](time)
     - put alarm on
-    - set alarm at five thirty am
-    - place alarm at five o'clock morning
+    - set alarm at [five_thirty_am](time)
+    - place alarm at [five](time) o'clock [morning](timeofday)
     - set the time
     - set the alarm tone
-    - set alarm of only monday morning six am
-    - set alarm of every tuesday of march month morning eight am
-    - set alarm of whole week morning ten am in april month
-    - please set alarm at five p. m.
-    - wake me up at six am
-    - put alarm at five am
-    - set alarm at five am
-    - wake me up at five am
-    - alert me at five hours
-    - set alarm at six thirty am
-    - set alarm half an hour from my meal time
-    - set my alarm for six am tomorrow
+    - set alarm of only [monday](date) [morning](timeofday) [six_am](time)
+    - set alarm of every [tuesday](date) of [march](date) month [morning](timeofday)
+      [eight_am](time)
+    - set alarm of [whole_week](time) [morning](timeofday) [ten_am](time) in [april](date)
+      month
+    - please set alarm at [five_p._m.](time)
+    - wake me up at [six_am](time)
+    - put alarm at [five_am](time)
+    - set alarm at [five_am](time)
+    - wake me up at [five_am](time)
+    - alert me at [five](time) hours
+    - set alarm at [six_thirty_am](time)
+    - set alarm [half_an_hour_from_my_meal_time](time)
+    - set my alarm for [six_am](time) [tomorrow](date)
     - wake me up
     - open alarm
-    - set an alarm for tomorrow at six in the morning
-    - get me up in half an hour
+    - set an alarm for [tomorrow](date) at [six](time) in the [morning](timeofday)
+    - get me up in [half_an_hour](time)
     - make an alarm
     - fix an alarm
     - set an alarm
-    - wake me up at four am
-    - alarm for ten am
-    - set alarm for twelve weeks from today at eight am
-    - set alarm for six am tomorrow
-    - add an alarm for tomorrow morning at six am
-    - put an alarm and wake me up at six am tomorrow morning
+    - wake me up at [four_am](time)
+    - alarm for [ten_am](time)
+    - set alarm for [twelve_weeks_from_today](time) at [eight_am](time)
+    - set alarm for [six_am](time) [tomorrow](date)
+    - add an alarm for [tomorrow](date) [morning](timeofday) at [six_am](time)
+    - put an alarm and wake me up at [six_am](time) [tomorrow](date) [morning](timeofday)
     - set an alarm for time
     - set my alarm for time
     - alarm set for time
-    - set my alarm for tuesday at six p. m.
-    - i need to set an alarm for next friday at noon
-    - set an alarm for tomorrow morning at eight
-    - please set the alarm for next friday at six thirty am
-    - need an alarm set for sunday at five in the morning
-    - make an alarm for me at five am tomorrow
-    - set the alarm for two hours from now
-    - set an alarm for one hour from now
-    - wake me up at five hundred and thirty
-    - set an alarm for five hundred and thirty
-    - set an alarm for five thirty
-    - i need to get going at eight am tomorrow set up an alarm thirty minutes before that
-    - mike will send me an email tomorrow can you please set up an alarm fifteen minutes after receiving that email
-    - if my package shows that it is for delivery tomorrow can you set up an alarm one hour after thank you
-    - please set an alarm for seven hundred and thirty am tomorrow
-    - i'd like an alarm set for this saturday at ten
-    - set an eight hundred am alarm for next tuesday
+    - set my alarm for [tuesday](date) at [six_p._m.](time)
+    - i need to set an alarm for next [friday](date) at [noon](timeofday)
+    - set an alarm for [tomorrow](date) [morning](timeofday) at [eight](time)
+    - please set the alarm for next [friday](date) at [six_thirty_am](time)
+    - need an alarm set for [sunday](date) at [five](time) in the [morning](timeofday)
+    - make an alarm for me at [five_am](time) [tomorrow](date)
+    - set the alarm for [two_hours](time) from now
+    - set an alarm for [one_hour](time) from now
+    - wake me up at [five_hundred_and_thirty](time)
+    - set an alarm for [five_hundred_and_thirty](time)
+    - set an alarm for [five_thirty](time)
+    - i need to get going at [eight_am](time) [tomorrow](date) set up an alarm [thirty_minutes_before_that](time)
+    - if my package shows that it is for [delivery](order_type) [tomorrow](date) can
+      you set up an alarm [one_hour_after](time) thank you
+    - please set an alarm for [seven_hundred_and_thirty_am](time) [tomorrow](date)
+    - i'd like an alarm set for this [saturday](date) at [ten](time)
+    - set an [eight_hundred_am](time) alarm for next [tuesday](date)
     - wake me up at this time
     - set a new alarm for that time
-    - set alarm for six am everyday
-    - set alarm for tomorrow morning at six am
-    - set alarm for noon tomorrow
-    - can you set the alarm for one hundred and thirty
-    - set alarm for sixth of june two thousand seventeen at five am
-    - set an alarm for me for tomorrow at seven p. m.
-    - i need an alarm for sunday at eight am can you please set one for me
-    - please set the alarm for eight p. m. wednesday evening
-    - at seven am tomorrow morning ring the alarm
-    - set an alarm for eight am
-    - please set my alarm for five p. m.
-    - i need an alarm for nine p. m.
+    - set alarm for [six_am](time) [everyday](date)
+    - set alarm for [tomorrow](date) [morning](timeofday) at [six_am](time)
+    - set alarm for [noon](timeofday) [tomorrow](date)
+    - can you set the alarm for [one_hundred_and_thirty](time)
+    - set alarm for [sixth_of_june_two_thousand_seventeen](date) at [five_am](time)
+    - set an alarm for me for [tomorrow](date) at [seven_p._m.](time)
+    - i need an alarm for [sunday](date) at [eight_am](time) can you please set one
+      for me
+    - please set the alarm for [eight_p._m.](time) [wednesday](date) [evening](timeofday)
+    - at [seven_am](time) [tomorrow](date) [morning](timeofday) ring the alarm
+    - set an alarm for [eight_am](time)
+    - please set my alarm for [five_p._m.](time)
+    - i need an alarm for [nine_p._m.](time)
     - change alarm setting
-    - let me know when it is ten
-    - please set an alarm at seven am tomorrow morning
-    - send me a wake up alert at seven am tomorrow morning
-    - i would like a wake up alarm at seven am tomorrow
-    - wake me at daybreak
+    - let me know when it is [ten](time)
+    - please set an alarm at [seven_am](time) [tomorrow](date) [morning](timeofday)
+    - send me a [wake_up](alarm_type) alert at [seven_am](time) [tomorrow](date) [morning](timeofday)
+    - i would like a [wake_up](alarm_type) alarm at [seven_am](time) [tomorrow](date)
+    - wake me at [daybreak](time)
     - get me to alarm setting
-    - i need to get up at seven am
-    - is my alarm set for seven am
-    - set up an alarm clock at one p. m.
-    - set an alarm for seven am
-    - make an alarm for the morning
-    - create an alarm for five p. m.
-    - olly i need an alarm set for five hundred and thirty am tomorrow
-    - i need an alarm set for five hundred and thirty am tomorrow
-    - i want an alarm for three today
-    - google set my alarm to go off in an hour
-    - wake me up at seven am
-    - i need a six am wake up call
-    - get me up at eight am
-    - set alarm for nine am
+    - i need to get up at [seven_am](time)
+    - is my alarm set for [seven_am](time)
+    - set up an alarm clock at [one_p._m.](time)
+    - set an alarm for [seven_am](time)
+    - make an alarm for the [morning](timeofday)
+    - create an alarm for [five_p._m.](time)
+    - olly i need an alarm set for [five_hundred_and_thirty_am](time) [tomorrow](date)
+    - i need an alarm set for [five_hundred_and_thirty_am](time) [tomorrow](date)
+    - i want an alarm for [three](time) [today](date)
+    - google set my alarm to go off in [an_hour](time)
+    - wake me up at [seven_am](time)
+    - i need a [six_am](time) wake up call
+    - get me up at [eight_am](time)
+    - set alarm for [nine_am](time)
     - please set an alarm for me
-    - set an alarm for me for tomorrow
+    - set an alarm for me for [tomorrow](date)
     - i need you to set an alarm
     - can you set an alarm for me
-    - set an alarm for nine p. m.
-    - alert me in three hours
-    - change my alarms to mountain time
-    - please wake me up at eight am
-    - set my alarm for eight am
-    - alarm me at eight am
-    - please set an alarm at six am
-    - set an alarm at six am
-    - could you please set an alarm at six am
-    - i need to set an alarm tomorrow at one thousand two hundred p. m. to remind me to take my medication
-    - i want to set an alarm when i'm driving home tomorrow to remember to stop at the store and get food
-    - please put on an alarm for eight am
-    - please set my alarm clock for eight am
-    - i need an alarm set for eight am
-    - set an alarm for ten o'clock tomorrow morning
-    - wake me up at ten
-    - i need to get up at ten tomorrow
-    - wake me up at nine am
-    - postpone my alarm by fifteen minutes
-    - set an alarm for seven thirty am
-    - wake me up at eight o'clock
-    - remind me at six thirty p. m.
-    - tell me when it is five p. m.
-    - set an alarm for six thirty am
-    - set alarm for one hour from now
-    - set an alarm for thursday at seven p. m.
-    - set an alarm for five am
-    - please set an alarm for ten p. m.
-    - can you set an alarm for seven am
-    - remind me at five p. m.
+    - set an alarm for [nine_p._m.](time)
+    - alert me in [three_hours](time)
+    - change my alarms to [mountain](time_zone) time
+    - please wake me up at [eight_am](time)
+    - set my alarm for [eight_am](time)
+    - alarm me at [eight_am](time)
+    - please set an alarm at [six_am](time)
+    - set an alarm at [six_am](time)
+    - could you please set an alarm at [six_am](time)
+    - i need to set an alarm [tomorrow](date) at [one_thousand_two_hundred_p._m.](time)
+      to remind me to [take_my_medication](event_name)
+    - i want to set an alarm when i'm driving home [tomorrow](date) to remember to [stop_at_the_store_and_get_food](event_name)
+    - please put on an alarm for [eight_am](time)
+    - please set my alarm clock for [eight_am](time)
+    - i need an alarm set for [eight_am](time)
+    - set an alarm for [ten](time) o'clock [tomorrow](date) [morning](timeofday)
+    - wake me up at [ten](time)
+    - i need to get up at [ten](time) [tomorrow](date)
+    - wake me up at [nine_am](time)
+    - postpone my alarm by [fifteen_minutes](time)
+    - set an alarm for [seven_thirty_am](time)
+    - wake me up at [eight](time) o'clock
+    - remind me at [six_thirty_p._m.](time)
+    - tell me when it is [five_p._m.](time)
+    - set an alarm for [six_thirty_am](time)
+    - set alarm for [one_hour_from_now](time)
+    - set an alarm for [thursday](date) at [seven_p._m.](time)
+    - set an alarm for [five_am](time)
+    - please set an alarm for [ten_p._m.](time)
+    - can you set an alarm for [seven_am](time)
+    - remind me at [five_p._m.](time)
     - reminder
     - please we're the following alarm
-    - set alarm for eight am tomorrow
-    - set an alarm for tomorrow monday at eight am
-    - set the alarm for nine am on weekends
-    - the set alarm for nine p. m. on thursday night
-    - wake me up at six thirty
+    - set alarm for [eight_am](time) [tomorrow](date)
+    - set an alarm for [tomorrow_monday](date) at [eight_am](time)
+    - set the alarm for [nine_am](time) on [weekends](time)
+    - the set alarm for [nine_p._m.](time) on [thursday](date) [night](timeofday)
+    - wake me up at [six_thirty](time)
     - set the alarm
-    - wake me up in thirty minutes
-    - set an alarm for eight p. m.
-    - set an alarm for five minutes from now
+    - wake me up in [thirty_minutes](time)
+    - set an alarm for [eight_p._m.](time)
+    - set an alarm for [five_minutes_from_now](time)
     - can you set my alarm
     - please set my alarm
-    - add a five am alarm in place of my nine p. m. alarm
+    - add a [five_am](time) alarm in place of my [nine_p._m.](time) alarm
     - turn on my first scheduled alarm
-    - turn on an alarm for three thirty p. m. today
-    - alarm time for twelve p. m.
-    - set my alarm for twelve p. m.
-    - make a new alarm
+    - turn on an alarm for [three_thirty_p._m.](time) [today](date)
+    - alarm time for [twelve_p._m.](time)
+    - set my alarm for [twelve_p._m.](time)
+    - mak]e a new alarm
 - intent: audio_volume_down
-  examples: |
-    - set the volume to low
+  examples:
+    - set the volume [to_low](change_amount)
     - you're too loud
     - quieter
     - softer
@@ -190,7 +194,7 @@ nlu:
     - it is too loud decrease the volume
     - could you please lower your volume
     - could you please lower the tone
-    - decrease the volume to ten percent
+    - decrease the volume [to_ten_percent](change_amount)
     - ok google lower all volume on speakers please
     - lower all volume on speakers please
     - it's really loud can you please turn the music down
@@ -201,12 +205,12 @@ nlu:
     - i want to slow down my speaker
     - make the volume lower
     - please turn down the volume
-    - lower the volume to twenty
-    - decrease the volume to ten
+    - lower the volume [to_twenty](change_amount)
+    - decrease the volume [to_ten](change_amount)
     - please turn the volume down
     - no no turn it down
-    - turn the speakers down to five percent
-    - lower volume by fifty percent
+    - turn the speakers down [to_five_percent](change_amount)
+    - lower volume [by_fifty_percent](change_amount)
     - decrease the volume
     - down
     - decrease volume
@@ -214,10 +218,10 @@ nlu:
     - decrease volume to very soft
     - low the volume
     - turn the volume down a little please
-    - start the radio now on low volume
+    - start the [radio](device_type) now on low volume
     - lower the speakers
     - lower audio
-    - turn down volume twenty percent
+    - turn down volume [twenty_percent](change_amount)
     - lower speaker volume
     - turn down speakers
     - turn down the speakers
@@ -229,360 +233,356 @@ nlu:
     - please lower the speaker volume
     - lower the volume on the speakers
     - please adjust the speakers to a lower more comfortable level
-    - slow down the speaker volume
-    - please talk softer
-    - too loud
-- intent: datetime_query
-  examples: |
-    - what's the time in australia
-    - tell me the time in moscow
-    - tell me today's date
-    - what date is it today
-    - what's the day today
-    - what's the date
-    - what is the time
-    - tell me the time
-    - what time is it
-    - what's date today
-    - what day is today
-    - tell me a date
-    - what time is it in las vegas
-    - what time is it in beijing
-    - what's the time
-    - what's the time in tokyo now
-    - what time is it in moscow now
-    - how many days are left in this year
-    - what day is new year's eve this year
-    - what day is memorial day this year
-    - what day of the week is the twenty second march
-    - twenty ninth march comes on what day
-    - what day of the week is first april
-    - can you tell me the time
-    - what is the current time
-    - what is the current date
-    - is it monday today
-    - what day is it today
-    - what day of the month is next tuesday
-    - what is today's date
-    - what day is it
-    - tell me the date and the time
-    - siri what's the date
-    - tell me the hour
-    - what time is it in the other time zones
-    - what time zone is arizona
-    - what time is it in new york city
-    - what is the time in india right now
-    - what time is it right now in australia
-    - what time is it in des moines
-    - what's the time in denver
-    - what time is it right now
-    - give me the time
-    - how many birthday's are on twenty third
-    - is it second saturday on twelfth
-    - is there christmas on twenty second
-    - what is the date
-    - what is the time in the eastern time zone
-    - what day of the week is thanksgiving
-    - what is the last day of the month
-    - what is the time central
-    - what is the current mountain time
-    - what is time now in california
-    - time now in new york
-    - current time in japan
-    - can you tell me what date it is
-    - can you tell me what time is it
-    - what time is it now
-    - display current time
-    - what is the time now in new york
-    - give me the time in washington
-    - give me the time at washington right now
-    - what day of the month is it
-    - what time is it in miami florida
-    - what time is it in cleveland ohio
-    - what time is it in honolulu
-    - tell me what time it is right now
-    - what time are we looking at right now
-    - what time is it in new york
-    - what time is it right now in new york
-    - please tell me the current time in new york
-    - please tell me what time it is
-    - what is the time in london right now
-    - what time is it in new york now
-    - can you tell me what time is it in new york
-    - what hour is it in new york now
-    - what time is it in london right now
-    - please show me today's date
-    - can i have today's date
-    - what day of the week does the fifteenth of march fall on
-    - when is the next month that has thirty one days
-    - today date
-    - tell me the date
-    - is it the twenty ninth already
-    - tell me what day of the week it is
-    - what's the time in sydney now
-    - time in new york now
-    - what is the current time in lagos nigeria
-    - what is the current time in new york
-    - present time in new york
-    - what will be day on fifteenth march
-    - give me the date of monday on third week of this month
-    - i want the date of last monday of this month
-    - what is the time in new york now
-    - tell me what time it is
-    - hello what time it is now
-    - can you tell me today's date
-    - tell me the current time
-    - please give me the time
-    - tell me the current time in central time
-    - what day is it on fifth december
-    - does it fall a sunday on fifth december
-    - i want exact time in washington right now
-    - what will be the time now in washington
-    - what is current time
-    - can you tell me current time
-    - hey olly what's today's date
-    - hey what's today's date
-    - can you tell me what the date is today
-    - tell me the current time in ottawa
-    - is the eighteenth a monday or a sunday
-    - what day is easter
-    - fifty thousand two hundred and seventeenth
-    - one hundred thousand two hundred and seventeenth
-    - one hundred and fifty thousand two hundred and seventeenth
-    - can you tell me the current time
-    - what date is the third friday of this month
-    - what was the date of two wednesdays back from today
-    - time
-    - what is the time now
-    - how much in the clock
-    - please tell me the time
-    - tell me the time in canberra
-    - when is halloween
-    - when is easter in the year two thousand and eighteen
-    - show me the current time in germany
-    - what is the current date today
-    - what is the current day month and year
-    - what time is it in dallas
-    - please provide current time in india
-    - tell me current time in los angels
-    - tell me present time in malaysia
-    - new york time please
-    - what time is time
-    - can you please tell me the time
-    - what's the time in china right now
-    - what is the date today
-    - date today
-    - today is
-    - how many minutes pass four p. m.
-    - tell me current time
-    - time and date of today
-    - what is the time in clock
-    - how many seconds are left to complete this hour
-    - what's the time now
-    - what date is today
-    - what month is today
-    - what time is it in boston
-    - show me boston's current time
-    - what is the current date time group
-    - what is london time
-    - what is the time in perth
-    - what time and day is it today
-    - current time and date please
-    - can you check the time
-    - what time is it in karachi right now
-    - give me the time in london
-    - what day was it on my birth date
-    - was christmas one thousand nine hundred and seventy two on a weekend
-    - what's the date of the winter solstice two years from now
-    - could you tell me what time it is
-    - what is the current time right now
-    - i need to know the time right now what is it
-    - time please
-    - tell me the time now
-    - what's today date
-    - what's the date today
-    - tell me the today's date
-    - what day of the week was december four one thousand nine hundred and eighty two
-    - what week of the year does the summer season start
-    - how many weeks are left for christmas
-    - on what date is easter this year
-    - which day is friday the thirteenth this year
-    - what day this year has the longest daylight time
-    - get me the time in london now
-    - display the local time of london at this moment
-    - can you tell me the date today
-    - what's the time in london
-    - could you tell me the time in london
-    - may i know the time in london
-    - tell me what time is it
-    - tell me the time in india
-    - what could be the time in india
-    - let me know the time in india
-    - what's time
-    - g. m. t. time
-    - what time does the sun set
-    - is the time currently correct for where i am located
-    - current time please
-    - what time is it in florida
-    - what is the time over in florida
-    - today is what date
-    - siri today is what date
-    - i need the time of day
-    - what day of the week is valentine's on
-    - what day of the week is valentines on
-    - what is tomorrows date
-    - what is tomorrow's date
-    - is today march sixth
-    - what is today
-    - is today the fourth or the fifth
-    - let me know today's date in american format
-    - current date please
-    - what is today date
-    - which date is today
-    - show me the time
-    - march tenth lands on what day of the week
-    - what is the date of next saturday
-    - the last friday of the month lands on what day
-    - what time is it in london
-    - what's the time in chicago
-    - what day does easter fall on this year
-    - what day is december thirteenth
-    - what day does april sixteenth fall on
-    - tell me the date today
-    - what is mondays actual date
-    - the second of next mont lands on what day
-    - what time is it in this city
-    - olly what time is it in this city
-    - olly new york time
-    - new york time
-    - tell me which time is it in new york
-    - tell me what time it currently is
-    - what is today's exact date
-    - tell me what the date is today
-    - what time is it in austin
-    - yo what's the current time
-    - what's today's date
-    - what time is it in central standard time
-    - what time is it in mountain standard time
-    - what time is it in pacific standard time
-    - what is eastern standard time right noe
-    - what is the time in the midwest right now
-    - what time is it in that city
-    - what's the date tomorrow
-    - what day of the week does christmas fall on this year
-    - what day does my birthday fall on this year
-    - what is the current central time
-    - what is the current pacific time
-    - what is the current eastern time
-    - what time is it in dooa
-    - what is the time difference between here and dakar
-    - what is the time in paris
-    - what is todays date
-    - how late am i
-    - tell me the time in jakarta
-    - report the time in miami
-    - what time is it in hong kong
-    - what is the date for next tuesday
-    - is the twenty third on the weekend
-    - what time is it in california
-    - olly what time is it in california
-    - what time does the match start
-    - is the twenty second on a wednesday
-    - the twenty second is on what day of the week
-    - what day of the week does the twenty second fall on this month
-    - is it ten
-    - what time is it right now in pacific time
-    - what is the current time in chennai
-    - what is the current date in india
-    - what is the time in beijing
-    - what is the time in la
-    - what's the current time in orlando floor
-    - tell me the time in london england
-    - what is the date and time for today
-    - is today's date the ninth
-    - what time i sit in china right now
-    - what is the time in zimbabwe right now
-    - olly what is the time in zimbabwe right now
-    - what time is it in the eastern half of the us right now
-    - today is which date
-    - show me the date of today
-    - let me know the time
-    - what is the timer in japan
-    - what time is it on the west coast
-    - please tell me the date and time
-    - what is the correct time
-    - can i get the time
-    - i need to know what is the date today
-    - what day does halloween fall on this year
-    - what day is the twentieth this month
-    - how many hours ahead is n. y. c.
-    - say the time
-    - what day of the week is halloween
-    - olly what day of the week is halloween
-    - when is the next holiday
-    - how many days are in this month
-    - what's the best day next week to go out for pizza
-    - what is the time in new york
-    - can you tell me the time in new york
-    - do you know what day it is
-    - please let me know today's date
-    - current time
-    - what day is the fifth
-    - show me what time it is
-    - what is the day today
-    - what is ten am in eastern time
-    - please let me know what time seven p. m. is in p. s. t.
-    - what time is it now in g. m. t.
-    - current time new york
-    - what's the current time in new york
-    - hey siri what time is it
-    - hey olly what time is it
-    - hey siri what's the time
-    - hey olly what's the time
-    - what is the time in boston
-    - what is the current time in boston
-    - tell me the time in boston
-    - can i know what's the time now
-    - please check the time
-    - hey what is the time
-    - is it afternoon yet
-    - what's the current time in eastern standard
-    - what time is it on the east coast of the united states
-    - please tell me the current date
-    - what's the time of day right now
-    - what time is it in chicago right now
-    - what is the time in the pacific time zone at this very moment
-    - in how many hours will it be midnight in london england
-    - what is the time in china
-    - what is the time in dubai
-    - what time is it in dubai
-    - tell me the time in tokyo
-    - what hour of the day is it in dallas
-    - what time is it in england
-    - give me the time in p. s. t.
-    - what time is it in cleveland
-    - the time in cairo please
-    - what is the time in bangalore
-    - what is the time in hyderabad
-    - what is the current time in london
-    - be my clock
-    - what is the time in london
-    - time wellington nz
-    - give me the time in phoenix az
-    - what day is the twenty second
-    - what is the current time in delhi
-    - give me the local time of london
-    - what is the first friday of next month
-    - how many saturdays are in march
-    - hey what time is it in london now
-    - hey olly what time is it in london now
-    - current date
-    - what time is it relative to new york
-    - good day
-    - how was the day
-    - how is this week's weather
-- intent: general_greet
-  examples: |
+    - slo]w down the speaker volume
+- intent: datetime_query 
+  examples:
+     - what's the time in [australia](place_name)
+     - tell me the time in [moscow](place_name)
+     - tell me [today's](date) date
+     - what date is it [today](date)
+     - what's the day [today](date)
+     - what's the date
+     - what is the time
+     - tell me the time
+     - what time is it
+     - what's date [today](date)
+     - what day is [today](date)
+     - tell me a date
+     - what time is it in [las_vegas](place_name)
+     - what time is it in [beijing](place_name)
+     - what's the time
+     - what's the time in [tokyo](place_name) now
+     - what time is it in [moscow](place_name) now
+     - how many days are left in [this_year](date)
+     - what day is new year's eve [this_year](date)
+     - what day is memorial day [this_year](date)
+     - what day of the week is the [twenty_second_march](date)
+     - what day of the week is [first_april](date)
+     - can you tell me the time
+     - what is the current time
+     - what is the current date
+     - is it [monday_today](date)
+     - what day is it [today](date)
+     - what day of the [month](date) is next [tuesday](date)
+     - what is [today's](date) date
+     - what day is it
+     - tell me the date and the time
+     - what's the date
+     - siri what's the date
+     - tell me the hour
+     - what time is it in the [other_time_zones](place_name)
+     - what time zone is [arizona](place_name)
+     - what time is it in [new_york_city](place_name)
+     - what is the time in [india](place_name) right now
+     - what time is it right now in [australia](place_name)
+     - what time is it in [des_moines](place_name)
+     - what's the time in [denver](place_name)
+     - what's the time
+     - what time is it right now
+     - give me the time
+     - how many [birthday's](event_name) are on [twenty_third](date)
+     - is it [second_saturday](date) on [twelfth](date)
+     - is there [christmas](event_name) on [twenty_second](date)
+     - what is the date
+     - what is the time in the [eastern](time_zone) time zone
+     - what day of the week is [thanksgiving](event_name)
+     - what is the last day of the [month](date)
+     - what is the time [central](time_zone)
+     - what is the current [mountain](time_zone) time
+     - what is time now in [california](place_name)
+     - time now in [new_york](place_name)
+     - current time in [japan](place_name)
+     - can you tell me what date it is
+     - can you tell me what time is it
+     - what time is it now
+     - display current time
+     - what is the time now in [new_york](place_name)
+     - give me the time in [washington](place_name)
+     - give me the time at [washington](place_name) right now
+     - what day of the month is it
+     - what time is it in [miami_florida](place_name)
+     - what time is it in [cleveland_ohio](place_name)
+     - what time is it in [honolulu](place_name)
+     - tell me what time it is right now
+     - what time are we looking at right now
+     - what time is it in [new_york](place_name)
+     - what time is it right now in [new_york](place_name)
+     - please tell me the current time in [new_york](place_name)
+     - please tell me what time it is
+     - what is the time in [london](place_name) right now
+     - what time is it in [new_york](place_name) now
+     - can you tell me what time is it in [new_york](place_name)
+     - what hour is it in [new_york](place_name) now
+     - what time is it in [london](place_name) right now
+     - please show me [today's](date) date
+     - can i have [today's](date) date
+     - what day of the week does the [fifteenth_of_march](date) fall on
+     - when is the [next_month](date) that has thirty one days
+     - tell me the date
+     - is it the [twenty_ninth](date) already
+     - tell me what day of the week it is
+     - what's the time in [sydney](place_name) now
+     - time in [new_york](place_name) now
+     - what is the current time in [lagos_nigeria](place_name)
+     - what is the current time in [new_york](place_name)
+     - present time in [new_york](place_name)
+     - what will be day on [fifteenth_march](date)
+     - give me the date of [monday](date) on [third_week_of_this_month](date)
+     - i want the date of [last_monday_of_this_month](date)
+     - what is the time in [new_york](place_name) now
+     - tell me what time it is
+     - hello what time it is now
+     - can you tell me [today's](date) date
+     - tell me the current time
+     - please give me the time
+     - tell me the current time in [central](time_zone) time
+     - what day is it on [fifth_december](date)
+     - does it fall a sunday on [fifth_december](date)
+     - i want exact time in [washington](place_name) right now
+     - what will be the time now in [washington](place_name)
+     - what is current time
+     - can you tell me current time
+     - hey olly what's [today's](date) date
+     - hey what's [today's](date) date
+     - can you tell me what the date is [today](date)
+     - tell me the current time in [ottawa](place_name)
+     - is the [eighteenth](date) a [monday](date) or a [sunday](date)
+     - what day is [easter](date)
+     - fifty thousand two hundred and seventeenth
+     - one hundred thousand two hundred and seventeenth
+     - one hundred and fifty thousand two hundred and seventeenth
+     - can you tell me the current time
+     - what date is the third [friday](date) of [this_month](date)
+     - what was the date of [two_wednesdays_back_from_today](date)
+     - time
+     - what is the time now
+     - how much in the clock
+     - please tell me the time
+     - tell me the time in [canberra](place_name)
+     - when is [halloween](event_name)
+     - when is [easter](event_name) in the year [two_thousand_and_eighteen](date)
+     - show me the current time in [germany](place_name)
+     - what is the current date [today](date)
+     - what is the current day month and year
+     - what time is it in [dallas](place_name)
+     - please provide current time in [india](place_name)
+     - tell me current time in [los_angels](place_name)
+     - tell me present time in [malaysia](place_name)
+     - what time is time
+     - can you please tell me the time
+     - what's the time in [china](place_name) right now
+     - what is the date [today](date)
+     - date [today](date)
+     - how many minutes pass [four_p._m.](time)
+     - tell me current time
+     - time and date of [today](date)
+     - what is the time in clock
+     - how many seconds are left to complete this [hour](time)
+     - what's the time now
+     - what date is [today](date)
+     - what month is [today](date)
+     - what time is it in [boston](place_name)
+     - show me [boston's](place_name) current time
+     - what is the current date time group
+     - what is [london](place_name) time
+     - what is the time in [perth](place_name)
+     - what time and day is it [today](date)
+     - current time and date please
+     - can you check the time
+     - what time is it in [karachi](place_name) right now
+     - give me the time in [london](place_name)
+     - what day was it on [my_birth_date](date)
+     - was [christmas](event_name) [one_thousand_nine_hundred_and_seventy_two](date)
+       on a [weekend](date)
+     - what's the date of the [winter_solstice](event_name) [two_years](time) from now
+     - could you tell me what time it is
+     - what is the current time right now
+     - i need to know the time right now what is it
+     - time please
+     - tell me the time now
+     - what's [today](date) date
+     - what's the date [today](date)
+     - tell me the [today's](date) date
+     - what day of the week was [december_four_one_thousand_nine_hundred_and_eighty_two](date)
+     - what week of the year does the [summer_season](time) start
+     - how many weeks are left for [christmas](event_name)
+     - on what date is [easter](event_name) this [year](time)
+     - which day is [friday](date) the [thirteenth_this_year](date)
+     - what day [this_year](date) has the longest daylight time
+     - get me the time in [london](place_name) now
+     - display the local time of [london](place_name) at this moment
+     - what's the date [today](date)
+     - can you tell me the date [today](date)
+     - what's the time in [london](place_name)
+     - could you tell me the time in [london](place_name)
+     - may i know the time in [london](place_name)
+     - tell me what time is it
+     - tell me the time in [india](place_name)
+     - what could be the time in [india](place_name)
+     - let me know the time in [india](place_name)
+     - what's time
+     - g. m. t. time
+     - what time does the [sun_set](time)
+     - is the time currently correct for where i am located
+     - current time please
+     - what time is it in [florida](place_name)
+     - what is the time over in [florida](place_name)
+     - siri [today](date) is what date
+     - i need the time of day
+     - what day of the week is [valentine's](event_name) on
+     - what day of the week is [valentines](event_name) on
+     - what is [tomorrows](date) date
+     - what is [tomorrow's](date) date
+     - is today [march_sixth](date)
+     - what is [today](date)
+     - is today the [fourth](date) or the [fifth](date)
+     - let me know [today's](date) date in american format
+     - current date please
+     - what is [today](date) date
+     - which date is [today](date)
+     - show me the time
+     - what is the date of next [saturday](date)
+     - the [last_friday_of_the_month](date) lands on what day
+     - what time is it in [london](place_name)
+     - what's the time in [chicago](place_name)
+     - what day does [easter](event_name) fall on [this_year](date)
+     - what day is [december_thirteenth](date)
+     - what day does [april_sixteenth](date) fall on
+     - tell me the date [today](date)
+     - what is [mondays](date) actual date
+     - the [second_of_next_mont_lands](event_name) on what day
+     - what time is it in [this_city](place_name)
+     - olly what time is it in [this_city](place_name)
+     - olly [new_york](place_name) time
+     - tell me which time is it in [new_york](place_name)
+     - tell me what time it currently is
+     - what is [today's](date) exact date
+     - tell me what the date is [today](date)
+     - what time is it in [austin](place_name)
+     - yo what's the current time
+     - what's [today's](date) date
+     - what time is it in [central](time_zone) standard time
+     - what time is it in [mountain](time_zone) standard time
+     - what time is it in [pacific](time_zone) standard time
+     - what is [eastern](time_zone) standard time right noe
+     - what is the time in the [midwest](time_zone) right now
+     - what time is it in [that_city](place_name)
+     - what's the date [tomorrow](date)
+     - what day of the week does [christmas](event_name) fall on [this_year](date)
+     - what day does my [birthday](event_name) fall on [this_year](date)
+     - what is the current [central](time_zone) time
+     - what is the current [pacific](time_zone) time
+     - what is the current [eastern](time_zone) time
+     - what time is it in [dooa](place_name)
+     - what is the time difference between here and [dakar](place_name)
+     - what is the time in [paris](place_name)
+     - what is [todays](date) date
+     - how late am i
+     - tell me the time in [jakarta](place_name)
+     - report the time in [miami](place_name)
+     - what time is it in [hong_kong](place_name)
+     - what is the date for next [tuesday](date)
+     - is the [twenty_third](date) on the [weekend](date)
+     - what time is it in [california](place_name)
+     - olly what time is it in [california](place_name)
+     - what time does the [match](event_name) start
+     - is the [twenty_second](date) on a wednesday
+     - the [twenty_second](date) is on what day of the week
+     - what day of the week does the [twenty_second](date) fall on [this_month](date)
+     - is it [ten](time)
+     - what time is it right now in [pacific](time_zone) time
+     - what is the current time in [chennai](place_name)
+     - what is the current date in [india](place_name)
+     - what is the time in [beijing](place_name)
+     - what is the time in [la](place_name)
+     - what is the time in [la](place_name)
+     - what's the current time in [orlando_floor](place_name)
+     - what's the current time in [orlando_floor](place_name)
+     - tell me the time in [london_england](place_name)
+     - what is the date and time for [today](date)
+     - is [today's](date) date the [ninth](date)
+     - what time i sit in [china](place_name) right now
+     - what is the time in [zimbabwe](place_name) right now
+     - olly what is the time in [zimbabwe](place_name) right now
+     - what time is it in the [eastern](time_zone) half of the us right now
+     - show me the date of [today](date)
+     - let me know the time
+     - what is the timer in [japan](place_name)
+     - what time is it on the [west_coast](time_zone)
+     - please tell me the date and time
+     - what is the correct time
+     - can i get the time
+     - i need to know what is the date [today](date)
+     - what day does [halloween](event_name) fall on [this_year](date)
+     - what day is the [twentieth_this_month](date)
+     - what time is it in [california](place_name)
+     - how many hours ahead is [n._y._c.](place_name)
+     - say the time
+     - what [day_of_the_week](date) is [halloween](event_name)
+     - olly what [day_of_the_week](date) is [halloween](event_name)
+     - when is the [next_holiday](event_name)
+     - how many days are in [this_month](date)
+     - what's the best day [next_week](date) to go out for [pizza](food_type)
+     - what is the time in [new_york](place_name)
+     - can you tell me the time in [new_york](place_name)
+     - do you know what day it is
+     - please let me know [today's](date) date
+     - current time
+     - what day is the [fifth](date)
+     - show me what time it is
+     - what is the [day](time_zone) [today](date)
+     - what is [ten_am](time) in [eastern](time_zone) time
+     - please let me know what time [seven_p._m.](time) is in [p._s._t.](time_zone)
+     - what time is it now in [g._m._t.](time_zone)
+     - current [time](time_zone) [new_york](place_name)
+     - what's the current time in [new_york](place_name)
+     - hey siri what time is it
+     - hey olly what time is it
+     - hey siri what's the time
+     - hey olly what's the time
+     - what is the time in [boston](place_name)
+     - what is the current time in [boston](place_name)
+     - tell me the time in [boston](place_name)
+     - what's the time now
+     - can i know what's the time now
+     - please check the time
+     - hey what is the time
+     - is it afternoon yet
+     - what's the current time in [eastern](time_zone) standard
+     - what time is it on the [east_coast](time_zone) of the [united_states](place_name)
+     - please tell me the current [date](time_zone)
+     - what's the time of day right now
+     - what time is it in [chicago](place_name) right now
+     - what is the time in the [pacific_time_zone](place_name) at this very moment
+     - in how many hours will it be [midnight](time) in [london_england](place_name)
+     - what is the time in [china](place_name)
+     - what is the time in [dubai](place_name)
+     - what time is it in [dubai](place_name)
+     - tell me the time in [tokyo](place_name)
+     - what hour of the day is it in [dallas](place_name)
+     - what time is it in [england](place_name)
+     - give me the time in [p._s._t.](time_zone)
+     - what time is it in [cleveland](place_name)
+     - the time in [cairo](place_name) please
+     - what is the time in [bangalore](place_name)
+     - what is the time in [hyderabad](place_name)
+     - what is the current time in [london](place_name)
+     - be my clock
+     - what is the time in [london](place_name)
+     - time [wellington_nz](place_name)
+     - give me the time in [phoenix_az](place_name)
+     - what day is the [twenty_second](time)
+     - what is the current time in [delhi](place_name)
+     - give me the local time of [london](place_name)
+     - what is the [first_friday_of_next_month](date)
+     - how many [saturdays_are_in_march](date)
+     - hey what time is it in [london](place_name) now
+     - hey olly what time is it in [london](place_name) now
+     - current date
+     - what time is it relative to [new_york](place_name)
+
+- intent: general_greet  
+  examples:
     - what's up
     - what's up olly
     - how are you
@@ -592,7 +592,7 @@ nlu:
     - hi
     - hello
     - hey how are you
-    - how are you today
+    - how are you [today](date)
     - good morning olly
     - good morning
     - good afternoon
@@ -601,158 +601,829 @@ nlu:
     - good afternoon how are you
     - hello what are you up to
     - good evening
-    - hello how are you today
-    - yo
-    - hi how are you
+    - hello how are you [today](date)
 - intent: iot_hue_lightoff
-  examples: |
+  examples:
     - turn the lights off please
     - time to sleep
     - time to sleep olly
-    - turn off the light in the bathroom
-    - turn the lights off in the bedroom
-    - olly turn the lights off in the bedroom
+    - turn off the light in the [bathroom](house_place)
+    - turn the lights off in the [bedroom](house_place)
+    - olly turn the lights off in the [bedroom](house_place)
     - olly lights off
     - lights off
     - olly good night lights off
     - switch off the lights
     - i want the light switched off can you do it for me
-    - turn off the garage light
-    - turn off the lights in the bathroom
-    - turn off the bathroom lights
-    - lights off bathroom
+    - turn off the [garage](house_place) light
+    - turn off the lights in the [bathroom](house_place)
+    - turn off the [bathroom](house_place) lights
+    - lights off [bathroom](house_place)
     - turn off light
-    - turn off lamp
+    - turn off [lamp](device_type)
     - by switch off
     - by remote sensor
-    - turn the lights off in the living room
-    - please set the lights off in the living room
-    - turn off one light on porch
+    - turn the lights off in the [living_room](house_place)
+    - please set the lights off in the [living_room](house_place)
+    - turn off one light on [porch](house_place)
     - please turn off the light
-    - turn the lamp off
-    - turn off room lights
-    - control lights turn off room lights
+    - turn the [lamp](device_type) off
+    - turn off [room](house_place) lights
+    - control lights turn off [room](house_place) lights
     - turn the lights off
-    - turn off light in bedroom
-    - shutoff light in the kitchen
-    - switch the light off in bedroom
+    - turn off light in [bedroom](house_place)
+    - shutoff light in the [kitchen](house_place)
+    - switch the light off in [bedroom](house_place)
     - please turn lights off
-    - turn the lights off to my room
-    - can you please turn off the lights in this room
+    - turn the lights off to [my_room](house_place)
+    - can you please turn off the lights in this [room](house_place)
     - please shut the lights
-    - turn the living room's light off
-    - turn this room light off
+    - turn the [living_room's](house_place) light off
+    - turn [this_room](house_place) light off
     - could you turn the light off
-    - shut off the lights in the kitchen
-    - turn off the lights in the bedroom
-    - please turn off the light of the bathroom
-    - please turn off the light of my son's room
-    - turn off living room lights
-    - turn the left light off
-    - turn off the lights in the living room
-    - turn off the lamps
+    - shut off the lights in the [kitchen](house_place)
+    - turn off the lights in the [bedroom](house_place)
+    - please turn off the light of the [bathroom](house_place)
+    - please turn off the light of [my_son's_room](house_place)
+    - turn off [living_room](house_place) lights
+    - turn the [left_light](device_type) off
+    - turn off the lights in the [living_room](house_place)
+    - turn off the [lamps](device_type)
     - time constrain
-    - all lights has to be turned off during the day
-    - turn all lights off during the day
-    - during the daytime all lights has to be turned off
-    - please turn off only right side light
-    - turn off the upstairs bathroom light
-    - i want the light in the kitchen powered off
-    - turn off all lights
-    - off all the lights on the right side
-    - turn off the dining room
-    - please turn off the kitchen
-    - switch off the master's bedroom
-    - switch off bedroom light
-    - put off the living room light
-    - shift the balcony light to off
+    - turn [all_lights](device_type) off [during_the_day](time)
+    - please turn off only right side [light](device_type)
+    - turn off the upstairs [bathroom](house_place) light
+    - i want the light in the [kitchen](house_place) powered off
+    - turn off [all_lights](device_type)
+    - off all the [lights_on_the_right_side](device_type)
+    - turn off the [dining_room](house_place)
+    - please turn off the [kitchen](house_place)
+    - switch off the [master's_bedroom](house_place)
+    - switch off [bedroom](house_place) light
+    - put off the [living_room](house_place) light
+    - shift the [balcony](house_place) light to off
     - shift the light off
     - switch off the light
-    - switch off main light
-    - turn off lobby light
-    - turn off garage light
+    - switch off [main_light](device_type)
+    - turn off [lobby](house_place) light
+    - turn off [garage](house_place) light
     - i don't need light
     - i don't need the lights
-    - shut the living room lights
-    - turn bedroom lights off
+    - shut the [living_room](house_place) lights
+    - turn [bedroom](house_place) lights off
     - i'm going to sleep now
-    - turn off the light of my bed room please
-    - i need you to turn off the light of my bed room
-    - can you please turn off the light of my bed room
-    - olly can you please turn off the light of my bed room
-    - turn off kitchen light
-    - turn off the light in the kitchen
-    - kitchen light off
-    - please turn off kitchen light for me
-    - can you turn off kitchen light for me
-    - turn off the bathroom light
+    - turn off the light of my [bed_room](house_place) please
+    - i need you to turn off the light of my [bed_room](house_place)
+    - can you please turn off the light of my [bed_room](house_place)
+    - olly can you please turn off the light of my [bed_room](house_place)
+    - turn off [kitchen](house_place) light
+    - turn off the light in the [kitchen](house_place)
+    - please turn off [kitchen](house_place) light for me
+    - can you turn off [kitchen](house_place) light for me
+    - turn off the [bathroom](house_place) light
     - turn off the closet light
     - put the lights off now
-    - turn off the shed light
-    - turn off the living room light
+    - turn off the [shed](house_place) light
+    - turn off the [living_room](house_place) light
     - turn off the lights
     - olly turn off the lights
     - switch the lights off
     - turn the lights off now
     - will you please turn the lights off
-    - lights off in the kitchen please
-    - turn off the porch light
-    - turn off my bedside lamp please
-    - please turn off the porch light
-    - turn off the living room lights
-    - turn off the kitchen lights
+    - lights off in the [kitchen](house_place) please
+    - turn off the [porch](house_place) light
+    - turn off my [bedside_lamp](device_type) please
+    - please turn off the [porch_light](device_type)
+    - turn off the [living_room](house_place) lights
+    - turn off the [kitchen](house_place) lights
     - power off the current
     - shut the lights off
     - shut off lights
     - discontinue use of lights
-    - turn lights in the room off
-    - please turn off the lights in the kitchen
-    - please turn off all of the lights in the house
-    - turn off smart lamp in den
-    - alexa turn off the lamp in the living room
-    - turn off the lamp in the living room
-    - turn office lights off
-    - turn off the office lights
-    - office lights off
+    - turn lights in the [room](house_place) off
+    - please turn off the lights in the [kitchen](house_place)
+    - please turn off all of the lights in the [house](house_place)
+    - turn off [smart_lamp](device_type) in [den](house_place)
+    - alexa turn off the [lamp](device_type) in the [living_room](house_place)
+    - turn off the [lamp](device_type) in the [living_room](house_place)
+    - turn [office](house_place) lights off
+    - turn off the [office](house_place) lights
     - turn light off
-    - lights off for the kids bedroom please then change the lights to my room to red
-    - turn off one light in my bedroom
-    - can you turn off one of my lights in my bathroom
+    - lights off for the [kids_bedroom](house_place) please then change the lights to
+      my [room](house_place) to [red](color_type)
+    - turn off [one_light](device_type) in my [bedroom](house_place)
+    - can you turn off one of my [lights](device_type) in my [bathroom](house_place)
     - turn off lighting
     - make the lights off
-    - turn off the lights in the kitchen
-    - turn my bedroom lights off
-    - can you turn my bathroom lights off
-    - turn off lights in my room
-    - please turn off all the lights in the house
-    - turn off the lights in this room please
-    - this room lights off
-    - no lights in the kitchen
+    - turn off the lights in the [kitchen](house_place)
+    - turn my [bedroom](house_place) lights off
+    - can you turn my [bathroom](house_place) lights off
+    - turn off lights in my [room](house_place)
+    - please turn off all the lights in the [house](house_place)
+    - turn off the lights in this [room](house_place) please
+    - this [room](house_place) lights off
+    - no lights in the [kitchen](house_place)
     - turn down the lights to medium
-    - turn room lights off now
-    - turn house lights off
-    - please turn off the lights in the bedroom
-    - turn off lights in kitchen
-    - turn off lights in all bathrooms
+    - turn [room](house_place) lights off now
+    - turn [house](house_place) lights off
+    - please turn off the lights in the [bedroom](house_place)
+    - turn off lights in [kitchen](house_place)
+    - turn off lights in all [bathrooms](house_place)
     - please turn off all the lights outdoor
-    - please turn off my patio lights
-    - please turn off the lights in patio
-    - please turn off the lights in bedroom
+    - please turn off my [patio](house_place) lights
+    - please turn off the lights in [patio](house_place)
+    - please turn off the lights in [bedroom](house_place)
     - please turn off all the lights in my house
     - turn the light off
     - good night
     - i want to sleep
-    - cut off the bathroom lights
-    - turn off the bathroom light please
-    - lights off in the guest room
+    - cut off the [bathroom](house_place) lights
+    - turn off the [bathroom](house_place) light please
+    - lights off in the [guest_room](house_place)
     - turn off lights
-    - turn lights off in living room
+    - turn lights off in [living_room](house_place)
     - can you turn off the lights
     - can you make the lights go out
     - sandle
-    - lights off in the living room
-    - turn the lights off in my bed room
-    - turn the kitchen lights off
-    - turn the living rooms lights off
-    - please shut off the kitchen lights
-    - kindly switch off the light
+    - lights off in the [living_room](house_place)
+    - turn the lights off in my [bed_room](house_place)
+    - turn the [kitchen](house_place) lights off
+    - turn the [living_rooms](house_place) lights off
+    - please shut off the [kitchen](house_place) lights
+- intent: weather_query  
+  examples:
+    - is it [raining](weather_descriptor)
+    - is it going to [rain](weather_descriptor)
+    - is it currently [snowing](weather_descriptor)
+    - what's the [weeks](time) forecast
+    - what's the [week's](time) forecast
+    - what's [this_weeks](date) weather
+    - what's [this_week's](date) weather
+    - tell me the weather [this_week](date)
+    - tell me the weather
+    - what is the weather now
+    - is it [raining](weather_descriptor) now
+    - how's the weather like in [beijing](place_name)
+    - tell me the weather in [shanghai](place_name)
+    - how is the weather like [today](date)
+    - is it [raining](weather_descriptor) outside
+    - is it [raining](weather_descriptor) outside olly
+    - should i bring an [umbrella](weather_descriptor) [tomorrow](date)
+    - is it [raining](weather_descriptor) in [barcelona](place_name)
+    - will it [rain](weather_descriptor) [today](date)
+    - what's going on outside
+    - what is the weather in [paris](place_name)
+    - what is the weather like in [toronto](place_name)
+    - what is [today's](date) forecast for [berlin](place_name)
+    - do you expect [sun](weather_descriptor) on [sunday](date)
+    - is it going to [rain](weather_descriptor) in the [evening](timeofday)
+    - is it going to be [windy](weather_descriptor) [tomorrow](date)
+    - what is the weather
+    - what is the forecast for [today](date)
+    - what is the weather like
+    - is it going to [rain](weather_descriptor) [tomorrow](date)
+    - tell me the weather in [barcelona](place_name) in [two_days_from_now](time)
+    - shall i get an [umbrella](weather_descriptor) [tomorrow](date)
+    - happy
+    - what is the weather condition in [new_york](place_name)
+    - i wish to know the weather in [san_fransico](place_name)
+    - i wish to know the weather in [s._f.](place_name)
+    - is it [snowing](weather_descriptor) in [california](place_name)
+    - how will be the weather [tomorrow](date)
+    - will it be [rainy](weather_descriptor) [tomorrow](date)
+    - what will be the [temperature](weather_descriptor) out there [tomorrow](date)
+    - what is [tomorrows](date) weather predictions
+    - what is [tomorrow's](date) weather predictions
+    - will it [rain](weather_descriptor) [tomorrow](date)
+    - will there be [snow](weather_descriptor) [tomorrow](date)
+    - what's the weather like in [new_york_city](place_name)
+    - tell me if the following is true about the weather
+    - is it [sunny](weather_descriptor) in [gonbad](place_name) now
+    - check the weather app to see if
+    - will it be [warm](weather_descriptor) [tomorrow](date)
+    - what is the weather like right now
+    - what's the weather like on [friday](date)
+    - what is the weather right now outside
+    - how [warm](weather_descriptor) is it right now outside
+    - is it going to [rain](weather_descriptor) [today](date)
+    - should i wear a [jacket](weather_descriptor) [today](date)
+    - what is the [temperature](weather_descriptor) outside
+    - is it [hot](weather_descriptor) outside
+    - is it [cold](weather_descriptor) outside
+    - by proper formula
+    - by get marks
+    - by our scores
+    - its not possible
+    - its very dangerous one
+    - what's the [temperature](weather_descriptor)
+    - how [warm](weather_descriptor) is it
+    - how [cold](weather_descriptor) is it
+    - will it be [raining](weather_descriptor) [tomorrow](date)
+    - will there be sunset at [five_thirty_p._m.](time) [tomorrow](date)
+    - is there any chances of [rain](weather_descriptor) [this_week](date)
+    - what is the current weather
+    - how [warm](weather_descriptor) is it now
+    - what will the weather be like a [week_from_now](time)
+    - on [tuesday](date) what is the weather supposed to be
+    - what is the [weekend](date) weather forecast
+    - what will be the [highest_temperature](weather_descriptor) [this_week](date)
+    - how is the current weather in [california](place_name)
+    - how is the current weather in [washington_d._c.](place_name)
+    - what is status of current weather
+    - what is the weather report
+    - how weather info
+    - check weather
+    - give weather stat for the [week](time)
+    - display weather for the [week](time)
+    - summarize [week's](time) weather details
+    - how [cold](weather_descriptor) is it outside [today](date)
+    - what is the [temperature](weather_descriptor) [today](date)
+    - how [humid](weather_descriptor) is the environment [today](date)
+    - what does the weather look like [this_week](date)
+    - what is the weather supposed to be like [this_week](date)
+    - what is the weather forecast for [this_week](date)
+    - alert me when the outside [temperature_reaches_sixty_eight_degrees](weather_descriptor)
+    - how is the weather [today](date)
+    - what is the [temperature](weather_descriptor) right now
+    - how was the weather [this_week](date)
+    - show me the [highest](weather_descriptor) weather [this_week](date)
+    - is [summer](weather_descriptor) going on
+    - what are the chances of [hail](weather_descriptor) [this_week](date)
+    - what is the weather where i am at [today](date)
+    - ok google what is the weather where i am at [today](date)
+    - show me the [seven_day](time) forecast for [home](place_name) please
+    - what is the current [temperature](weather_descriptor) outside
+    - hey its too [hot](weather_descriptor) outside what is the [temperature](weather_descriptor)
+      [this_afternoon](timeofday)
+    - hey google hey its too [hot](weather_descriptor) outside what is the [temperature](weather_descriptor)
+      [this_afternoon](timeofday)
+    - hey what will be the predicted weather for [tomorrow](date)
+    - is it going to [snow](weather_descriptor) [this_weekend](date) here
+    - weather forecast
+    - weather [today](date)
+    - what will the weather be for the [next_week](date)
+    - what will the [temperatures](weather_descriptor) be for the [next_week](date)
+    - look up [next_week](date) weather for me please
+    - what is the weather like in [new_york](place_name)
+    - what's the weather like right now in [new_york](place_name)
+    - is the weather [bad](weather_descriptor) in [new_york](place_name) right now
+    - will the weather be [bad](weather_descriptor) on [sunday](date)
+    - what is the weather going to be [this_weekend](date)
+    - what will the weather be [today](date)
+    - is it going to [snow](weather_descriptor) [today](date)
+    - how is the weather right now
+    - how [hot](weather_descriptor) is it outside
+    - what is the chance of [rain](weather_descriptor) [today](date)
+    - what will be [tomorrow's](date) weather in this location
+    - give me [tomorrow's](date) weather update
+    - show me weather list for [tomorrow](date)
+    - what's the current weather in [new_jersey](place_name)
+    - get me the weather forecast of [beijing](place_name)
+    - i want to know the weather in [nashik](place_name)
+    - is it going to [rain](weather_descriptor) later [today](date)
+    - tell me the [humidity](weather_descriptor) level [downtown](place_name) [today](date)
+    - how [cold](weather_descriptor) will it get [each_night](general_frequency) [this_week](date)
+    - what is the weather condition [today](date)
+    - will it [rain](weather_descriptor)
+    - tell me what was the [temperature](weather_descriptor) in [our_city](place_name)
+      at [twelve_p._m.](time)
+    - check weather update for [lagos](place_name) [this_week](date)
+    - what is the weather update for [tuesday](date)
+    - what will be the weather update for [monday](date) [noon](timeofday)
+    - how is the weather likely to be [this_week](date)
+    - is there any possibility of [rain](weather_descriptor) [this_week](date)
+    - please brief me about [this_week's](date) weather
+    - what was the [temperature](weather_descriptor) in [new_york](place_name) this
+      [morning](timeofday)
+    - give me the weather detail of [fifteenth_march](date)
+    - what will be the weather on [monday_this_week](date)
+    - what is [today's](date) climate here
+    - get [todays](date) climate forecast here
+    - what is the climate here [today](date)
+    - what's the weather forecast for [today](date)
+    - is the weather supposed to be [nice](weather_descriptor) [today](date)
+    - olly what is the weather [today](date)
+    - what is the weather [today](date)
+    - get [today's](date) weather report
+    - what is weather [today](date)
+    - how's weather [today](date)
+    - is weather [normal](weather_descriptor) [today](date)
+    - it is [hot](weather_descriptor) [today](date) is not it
+    - it is very [hot](weather_descriptor) [today](date) is not it
+    - what will the weather be like [this_week](date)
+    - what's the weather for [this_week](date)
+    - will it be [nice](weather_descriptor) outside [this_week](date)
+    - olly will it [rain](weather_descriptor) on [saturday](date)
+    - what will the weather be like on [saturday](date)
+    - olly what will the weather be like on [saturday](date)
+    - olly will it be [nice](weather_descriptor) on [saturday](date)
+    - i always pay attention
+    - i mostly pay attention
+    - i occasionally pay attention
+    - can i please have the weather for [tomorrow](date) here in [costa_mesa](place_name)
+    - how [hot](weather_descriptor) is it currently in [costa_mesa](place_name)
+    - weather
+    - what's it like outside
+    - what's it like in [chicago](place_name)
+    - how [hot](weather_descriptor) is it in [quebec](place_name)
+    - will it [rain](weather_descriptor) on [friday](date)
+    - is it going to [snow](weather_descriptor) [this_week](date)
+    - what's the [temperature](weather_descriptor) outside
+    - is it supposed to [rain](weather_descriptor) [tonight](timeofday)
+    - how's the weather in [orlando](place_name)
+    - is it [raining](weather_descriptor) in [toledo](place_name) right now
+    - i don't want to carry an [umbrella](weather_descriptor) will we have [rain](weather_descriptor)
+      [today](date)
+    - the sun is shinning bright will we have this weather for the [rest_of_the_day](time)
+    - please tell me if there is going to be [snow](weather_descriptor) [this_weekend](date)
+    - what's the weather for my location [this_week](date)
+    - can i have the [ten_day](time) forecast for me area
+    - will it [rain](weather_descriptor) [this_week](date)
+    - how's the weather going to be [this_week](date)
+    - please give me the weather report for [this_week](date)
+    - get the weather forecast for [this_week](date) please
+    - what's the weather like [tomorrow](date)
+    - is it going to be [sunny](weather_descriptor) next [tuesday](date)
+    - any signs of [rain](weather_descriptor)
+    - when is the next time it will [rain](weather_descriptor)
+    - how [cold](weather_descriptor) will it be next [tuesday](date)
+    - will it [snow](weather_descriptor) [tomorrow](date) at [noon](timeofday)
+    - yes or no [tomorrow's](date) [temperature](weather_descriptor) is to be [hot](weather_descriptor)
+    - yes or no [tomorrows](date) [temperature](weather_descriptor) is to be [hot](weather_descriptor)
+    - is it a yes or a no that [tomorrows](date) [temperature](weather_descriptor) will
+      be [hot](weather_descriptor)
+    - is it a yes or a no that [tomorrow's](date) [temperature](weather_descriptor)
+      will be [hot](weather_descriptor)
+    - what is [this_week's](date) weather forecast
+    - what is [this_weeks](date) weather forecast
+    - olly what is [this_week's](date) weather forecast
+    - what is [today's](date) weather
+    - what is the minimum [temperature](weather_descriptor) of [london](place_name)
+    - what will the weather conditions of [lucknow](place_name) on [ninth_february_two_thousand_and_seventeen](date)
+    - what is the highest [temperature](weather_descriptor) of [delhi](place_name)
+    - what will be the condition of weather [next_seven_days](time)
+    - what will be the highest [temperature](weather_descriptor) in [coming_week](date)
+    - please confirm the weather for the [thirteenth](date) of [this_month](date)
+    - please tell me if there will be [sun_with_no_clouds](weather_descriptor) on [friday](date)
+      of [this_week](date)
+    - is it [cold](weather_descriptor) weather there
+    - i hope it is [sunny](weather_descriptor) weather there
+    - may i know the weather there
+    - is the weather [cold](weather_descriptor)
+    - do you think it would [rain](weather_descriptor) [today](date)
+    - should i bring an [umbrella](weather_descriptor) for work [today](date)
+    - is the [sun_gonna_shine](weather_descriptor) in [devon](place_name) [this_weekend](date)
+    - will it get [warmer](weather_descriptor) here [next_week](date)
+    - is it going to [freeze](weather_descriptor) [overnight](time)
+    - weather report now
+    - climate details now
+    - olly climate details now
+    - how the weather [today](date)
+    - what is the weather for the [next_seven_days](time)
+    - tell me about the weather [this_week](date)
+    - what is the weather for the [school_week](date)
+    - is the weather [calm](weather_descriptor) [today](date)
+    - will there be a fall in [temperature](weather_descriptor) by [tonight](timeofday)
+    - is it [raining](weather_descriptor) in [boston](place_name)
+    - give me weather condition of [manhattan](place_name)
+    - weather report of [boston](place_name)
+    - is outside [raining](weather_descriptor)
+    - what is the weather for [today](date)
+    - can you tell me the weather for [monday](date)
+    - what will be [this_week](date) weather condition
+    - it's [pleasant](weather_descriptor) [today](date)
+    - what a [sunny](weather_descriptor) day
+    - check the weather of city on list starts with a
+    - check the weather of city [alabama](place_name)
+    - tell me [today's](date) weather report of city [alabama](place_name)
+    - it is [cloudy](weather_descriptor) [today](date)
+    - its [raining](weather_descriptor)
+    - tell me [this_week's](date) weather
+    - what will be the weather [this_week](date)
+    - how's the weather [this_week](date)
+    - are there going to be any [showers](weather_descriptor) [tomorrow](date) [morning](timeofday)
+    - what is the weather at [home](place_name)
+    - what is the weather like in [new_brighton_pa](place_name)
+    - tell me the weather for [new_brighton_pa](place_name)
+    - tell me the weather for [new_brighton_pa](place_name) olly
+    - how is the weather outside
+    - siri how is the weather outside
+    - weather on [monday](date)
+    - weather on [tuesday](date)
+    - find me the current weather condition
+    - what is the current weather condition in [my_place](place_name)
+    - can you please tell me the current weather condition
+    - weather in [dhaka](place_name)
+    - weather in [paris](place_name)
+    - weather in [homestead](place_name)
+    - weather in [miami](place_name)
+    - weather in [leisure_city](place_name)
+    - weather in [atlanta](place_name)
+    - weather forecast for [this_week](date)
+    - is it still going to be [rainy](weather_descriptor) and [cold](weather_descriptor)
+      on [wednesday](date)
+    - has the weather changed for [wednesday](date) at all
+    - do i need a [rain_coat](weather_descriptor) [today](date)
+    - is it [snowing](weather_descriptor) now
+    - do i need a [sweater](weather_descriptor) [today](date)
+    - tell me what the weather is doing in [grand_rapids_mi](place_name) right now
+    - what's the weather doing in [grand_rapids_mi](place_name) now
+    - is [today](date) going to be [sunny](weather_descriptor)
+    - is it probable that there would be [rain](weather_descriptor) in the forecast
+      [today](date)
+    - will the [u._v._index](weather_descriptor) be above eight [today](date)
+    - what is the weather this [friday](date)
+    - what will the weather be on the [seventh](date)
+    - what's the weather like [tomorrow](date)
+    - what is the forecast
+    - what [temperature](weather_descriptor) is it
+    - what is the [high](weather_descriptor) for [today](date)
+    - what is the weather right now
+    - is it [raining](weather_descriptor) right now
+    - what is the current weather in [new_york](place_name) city
+    - tell me the current weather in [new_york](place_name) city
+    - i need to know current weather in [new_york](place_name) city
+    - what will the weather be like in [oklahoma_city](place_name) on [monday](date)
+    - is it currently [raining](weather_descriptor) in [new_york](place_name) city
+    - what is the current [temperature](weather_descriptor) in [miami](place_name)
+    - what is the weather like in [brooklyn](place_name) right now
+    - please give me [todays](date) forecast for [new_york_city](place_name)
+    - what is the weather of [this_week](date)
+    - tell me the weather for [this_week](date)
+    - how is the weather looking for [this_week](date)
+    - what is the weather near me
+    - what is it like outside
+    - how is the weather
+    - what is the weather like in [seattle](place_name)
+    - tell me the weather in [miami_florida](place_name)
+    - current weather forecast
+    - is it going to [rain](weather_descriptor) on my [birthday](event_name)
+    - will i need to wear a [jacket](weather_descriptor) next [wednesday](date)
+    - am i going to have to worry about the [snowplows_burying_my_car](weather_descriptor)
+      in the driveway [tuesday](date)
+    - what is the weather forecast for [seattle](place_name)
+    - is it going to [rain](weather_descriptor) on [saturday](date)
+    - will it [snow](weather_descriptor) [next_week](date)
+    - will the [highest_temperature](weather_descriptor) be more than seventy degrees
+      [tomorrow](date)
+    - is it [raining](weather_descriptor) [tonight](timeofday)
+    - will the [temperature](weather_descriptor) stay about the same or is it going
+      to get colder
+    - is it going to [warm_up](weather_descriptor) [soon](time)
+    - is it currently [raining](weather_descriptor)
+    - should i bring an umbrella [today](date)
+    - is it colder than [yesterday](date)
+    - what is the [five_days](date) forecast looking like in [new_york_city](place_name)
+    - is it [raining](weather_descriptor) [today](date)
+    - is it [sunny](weather_descriptor) [today](date)
+    - what is the weather going to be like [today](date)
+    - tell me the current weather for [danville_il](place_name)
+    - what is the weather here
+    - current weather
+    - how is weather on such and such day
+    - weekly weather report
+    - monthly weather report
+    - weather [san_antonio_texas](place_name)
+    - weather for [next_eight_days](date) [san_antonio_texas](place_name)
+    - compare weather home and [san_antonio_texas](place_name)
+    - please tell me the weather
+    - weather in [bristol_v._t.](place_name)
+    - what's the weather like for the [next_week](date) in [chicago](place_name)
+    - accumulation of [snow_predictions](weather_descriptor) in [buffalo](place_name)
+    - olly accumulation of [snow_predictions](weather_descriptor) in [buffalo](place_name)
+    - olly what's the current weather
+    - what's the current weather
+    - tell me the [temperature](weather_descriptor)
+    - olly weather conditions for the [next_day](date)
+    - weather conditions for the [next_day](date)
+    - what's the weather in [minneapoliscity](place_name)
+    - how's the weather like in [new_jersey](place_name)
+    - is it raining in [toronto](place_name)
+    - what's the current [temperature](weather_descriptor)
+    - what's the weather like [today](date)
+    - is it [sunny](weather_descriptor) what south the [temperature](weather_descriptor)
+    - what should i wear is it [cold](weather_descriptor) outside
+    - is it [windy](weather_descriptor) [today](date)
+    - how [cold](weather_descriptor) is it outside
+    - let me know the weather for [today](date)
+    - do you know if there is any [rain](weather_descriptor) [today](date)
+    - tell me the weather for [new_york_city](place_name)
+    - what is the weather like [today](date)
+    - should we expect rain this [afternoon](timeofday)
+    - what was the weather report for [today](date)
+    - what is the weather in [miami](place_name)
+    - will it [rain](weather_descriptor) [tomorrow](date) in [miami](place_name)
+    - what is the [chance_of_thunderstorms](weather_descriptor) [today](date) in [biloxi](place_name)
+    - what is the weather like [this_week](date)
+    - olly what is the weather like [this_week](date)
+    - what is the weather [this_week](date) for [miami](place_name)
+    - what is the forecast for the [week](date)
+    - what is the weather in [los_angeles](place_name)
+    - what is the weather in [austin](place_name)
+    - report weather for thirty three thousand seven hundred and seventy four
+    - report weather for [largo](place_name)
+    - what's the weather like
+    - ok google what's the weather like
+    - is it going to [snow](weather_descriptor)
+    - is there going to be [fog](weather_descriptor) in the [morning](timeofday)
+    - what will the weather be in [chicago](place_name) [today](date)
+    - what is the weather forecast for [chicago](place_name)
+    - what will the weather be [next_week](date)
+    - is it going to be [sunny](weather_descriptor) [this_weekend](date)
+    - what is the [ten_day](date) forecast
+    - are there any forecasts of [rain_or_snow](weather_descriptor) [this_week](date)
+    - is the weather going to be [nice](weather_descriptor) [this_weekend](date)
+    - what [degree](weather_descriptor) is it outside
+    - will it [rain](weather_descriptor) [saturday](date)
+    - does the weather call for [rain](weather_descriptor) [saturday](date)
+    - what is [today's](date) weather in [springfield](place_name)
+    - what is the weather [back_home](place_name) [today](date)
+    - what is the weather in [pittsburgh](place_name)
+    - what's the weather in [toronto](place_name) [today](date)
+    - what the weather going to be in [n._y._c.](place_name) [next_week](date)
+    - what is [today's](date) weather forecast
+    - is there [snow](weather_descriptor) in the forecast
+    - what is the chance of [precipitation](weather_descriptor) in [todays](date) weather
+    - will it be [sunny](weather_descriptor)
+    - will it be [nice](weather_descriptor) at the [beach](place_name) on [friday](date)
+    - when is it going to [snow](weather_descriptor) next
+    - will it be [windy](weather_descriptor) [tonight](timeofday)
+    - will the [snow](weather_descriptor) stop [before_seven_am](time) [tomorrow](date)
+    - what is the weather in [london](place_name)
+    - what is the weather in [beijing](place_name)
+    - what is the weather in [this_week](date)
+    - which day will be [rainy](weather_descriptor) in [this_week](date)
+    - how is the weather in [this_week](date)
+    - it is not going to [rain](weather_descriptor) is it
+    - is [today](date) a [sunny](weather_descriptor) day
+    - it is a [sunny](weather_descriptor) day [today](date) right
+    - we don't expect [rain](weather_descriptor) [tomorrow](date) right
+    - what's the weather like in [sydney](place_name)
+    - what is the weather in [sydney](place_name) now
+    - what's the weather like in [toronto](place_name)
+    - how [hot](weather_descriptor) is it in [miami](place_name)
+    - show me the weather for [dallas](place_name)
+    - will it be [warm](weather_descriptor) on [friday](date) [night](timeofday)
+    - can you tell me the [temperature](weather_descriptor) for [saturday](date) [night](timeofday)
+    - will it be too [cold](weather_descriptor) for a dress on [sunday](date)
+    - what is the current [temperature](weather_descriptor) in [austin](place_name)
+    - what will the weather be like on date
+    - can you give me a weather report
+    - how is the weather looking in [los_angeles](place_name)
+    - give me a weather report for [las_vegas](place_name)
+    - how many [degrees](weather_descriptor) is it in [houston](place_name) right now
+    - what will be weather for [tomorrow](date) in [mumbai](place_name)
+    - show me [one_week](date) weather of [mumbai](place_name)
+    - show me [tomorrow](date) weather of [mumbai](place_name)
+    - weather [this_week](date)
+    - weather for [tomorrow](date)
+    - weather in [florida](place_name) [this_week](date)
+    - will it be [cold](weather_descriptor) [tomorrow](date)
+    - south it going to be [hot](weather_descriptor) [tomorrow](date)
+    - what kind of weather are they having in [orange_tx](place_name) right now
+    - is it going to be [sunny](weather_descriptor) [tomorrow](date)
+    - is it going to [rain](weather_descriptor) [this_week](date)
+    - is there going to be any [snow](weather_descriptor) on [tuesday](date)
+    - what is the weather looking like for the [rest_of_the_week](date)
+    - is there going to be any [flip_flop_weather](weather_descriptor) soon
+    - what is the current weather in [miami](place_name)
+    - what's the weather like in [chicago](place_name)
+    - what is the weather like now
+    - what will the weather be like in [austin](place_name) on [march_sixteenth](date)
+    - will there be any [snow](weather_descriptor) [next_week](date)
+    - will it [rain](weather_descriptor) on [august_fifteenth](date)
+    - how much [snow](weather_descriptor) has [maine](place_name) received as of [today](date)
+    - how much [snow](weather_descriptor) has fallen in [maine](place_name) since [yesterday](date)
+    - what is the current forecast for [maine](place_name)
+    - is it [cold](weather_descriptor) out
+    - what is the [temperature](weather_descriptor)
+    - show me a forecast
+    - open the weather app
+    - what's the weather right now
+    - olly what's the weather right now
+    - what is the weather like in [iowa](place_name)
+    - is it hot outside right now i'm [hawaii](place_name)
+    - what type of weather can i expect [today](date)
+    - is it [snowing](weather_descriptor) right now
+    - is it [warm](weather_descriptor) outside
+    - is it [sunny](weather_descriptor) outside at [this_moment](time)
+    - was it [windy](weather_descriptor) [yesterday](date)
+    - what is the weather going to be like [today](date) in [tucson](place_name)
+    - is it going to [rain](weather_descriptor) in the [next_few_days](date) in [tucson](place_name)
+    - what will the high be [tomorrow](date) in [tucson](place_name)
+    - what will be the [temperature](weather_descriptor) [today](date) for [miami_florida](place_name)
+    - tell me the percentage of the chance of [rain](weather_descriptor) in [seattle_washington](place_name)
+      for [today](date)
+    - tell me how many inches of [snow](weather_descriptor) did [new_york_city](place_name)
+      get [today](date)
+    - do i need to wear a [heavy_coat](weather_descriptor) [today](date)
+    - when is it suppose to be above fifty again
+    - please check the weather in [kansas](place_name)
+    - could you please check the weather in [kansas](place_name)
+    - will there be [snow](weather_descriptor) [this_week](date)
+    - will i need to wear a [coat](weather_descriptor) [today](date)
+    - should i wear [sandals](weather_descriptor)
+    - should i take an [umbrella](weather_descriptor) with me [tonight](timeofday)
+    - do i need to wear a [coat](weather_descriptor) [tomorrow](date) when i leave for
+      work
+    - do you think it will be okay to wear [shorts](weather_descriptor) [this_week](date)
+    - am i going to be able to [mow_the_grass](weather_descriptor) [this_evening](timeofday)
+    - should i wear [galoshes](weather_descriptor) [today](date)
+    - do i need a [coat](weather_descriptor) outside right now
+    - is there any [rain](weather_descriptor) in the forecast for the [next_week](date)
+    - will it be [over_ninety](weather_descriptor) degrees [tomorrow](date)
+    - what's the weather like right now
+    - is it [raining](weather_descriptor) later [today](date)
+    - is it [too_warm](weather_descriptor) to wear my [wooly_sweater](weather_descriptor)
+      [today](date)
+    - should i carry an [umbrella](weather_descriptor) with me [today](date)
+    - what is [todays](date) weather forecast
+    - what is [todays](date) weather
+    - what is the [highest_temperature](weather_descriptor) for [this_week](date)
+    - should i bring a [jacket](weather_descriptor) with me [tonight](timeofday)
+    - am i going to need to bring an [umbrella](weather_descriptor) to work [today](date)
+    - can i wear [shorts](weather_descriptor) out while shopping [today](date)
+    - will the weather be [less_than_ten_degree](weather_descriptor) in [paris](place_name)
+    - will there be [rain](weather_descriptor) [tomorrow](date) in [rome](place_name)
+    - is the weather [cloudy](weather_descriptor) [tonight](timeofday)
+    - is it too [cold](weather_descriptor) to go [swimming](weather_descriptor)
+    - what is the [five_day](date) forecast
+    - what is the current weather in [denver](place_name)
+    - how is the weather where i am
+    - how is it outside [today](date)
+    - what's the current weather
+    - what is the weather [next_week](date) in [pasadena_ca](place_name)
+    - what will the weather be [tomorrow](date)
+    - will the weather be [hot_or_cold](weather_descriptor) [tomorrow](date)
+    - will i need to carry around a br [today](date)
+    - will i need to carry around a brolly [today](date)
+    - will i need to carry an [umbrella](weather_descriptor) with me [today](date)
+    - what's the weather in [portland](place_name)
+    - is it [snowing](weather_descriptor) in [seattle](place_name)
+    - will it [rain](weather_descriptor) in [toronto](place_name) next [tuesday](date)
+    - what's the weather [this_week](date)
+    - will it [rain](weather_descriptor) at all [this_week](date)
+    - give me the [weekly](date) weather near me
+    - what's the forecast for [this_week](date)
+    - what day will it be [sunny](weather_descriptor)
+    - what [jacket](weather_descriptor) should i wear
+    - can i wear [sandals](weather_descriptor)
+    - weather [boston_ma](place_name)
+    - how is the weather in [san_francisco](place_name)
+    - is it [going_to_rain](weather_descriptor) at [one_p._m.](time) [today](date)
+    - will i need a [jacket](weather_descriptor) [today](date)
+    - what is the current forecast for [minneapolis](place_name)
+    - answer email from
+    - do i need to wear [sunscreen](weather_descriptor) [today](date)
+    - do i need my [raingear](weather_descriptor)
+    - do i need my [raingear](weather_descriptor)
+    - will i be able to get away with [shorts](weather_descriptor) [today](date)
+    - will i need to shovel my [driveway](weather_descriptor) this [morning](timeofday)
+    - should i dress in [layers](weather_descriptor) [today](date)
+    - tell me [this_week's](date) weather forecast
+    - what is the weather going to be like [this_week](date)
+    - give me the weather forecast for [this_week](date)
+    - will it be [raining](weather_descriptor) on [thursday](date)
+    - what is the [weekly](general_frequency) weather report
+    - is it supposed to snow [this_week](date)
+    - is it forecasted to [rain](weather_descriptor) in the [next_two_days](time)
+    - is it [sunny](weather_descriptor)
+    - what is the weather like outside
+    - olly what is the weather forecast for [today](date)
+    - what is the weather forecast for [today](date)
+    - when is the next warm day
+    - how soon can we expect [rain](weather_descriptor)
+    - the weather predictions you gave me are for the wrong city i want to know the
+      temperature where i am at
+    - weather fulton [missouri](place_name)
+    - what is the weather near me [this_week](date)
+    - show me [this_week's](date) forecast
+    - will there be any [seventy_degree](weather_descriptor) days [next_week](date)
+    - will the [temperature](weather_descriptor) be in the [today](date)
+    - will the sky be overcast
+    - is the [temperature](weather_descriptor) going to be [above_fifty](weather_descriptor)
+      [tomorrow](date)
+    - will the [temperature](weather_descriptor) be [higher_than_forty](weather_descriptor)
+      [tomorrow](date)
+    - what is [this_week's](date) weather forecast
+    - is it supposed to [rain](weather_descriptor) [tomorrow](date)
+    - what time will it rain [tomorrow](date)
+    - what is the weather in [columbus](place_name)
+    - will i need [sunscreen](weather_descriptor) [today](date)
+    - do i need a [light_or_heavy_jacket](weather_descriptor) [today](date)
+    - should i wear [sandals_or_shoes_with_socks](weather_descriptor)
+    - is my golf game going to get [rained](weather_descriptor) out
+    - is it [hot_and_muggy_or_warm_and_humid](weather_descriptor) in the [bayou](place_name)
+      [today](date)
+    - what's the weather in [chicago](place_name)
+    - do you know the weather
+    - what is the weather like [tomorrow](date)
+    - is it going to be [nice](weather_descriptor) [tomorrow](date)
+    - what is the forecast in me area [today](date)
+    - what is the forecast in my area [today](date)
+    - please show me the local weather
+    - will the [temperature](weather_descriptor) be above [freezing](weather_descriptor)
+      on [wednesday](date)
+    - is the [weekend](date) going to be [nice](weather_descriptor)
+    - is it gonna [rain](weather_descriptor)
+    - is it gonna [snow](weather_descriptor)
+    - is it gonna be [cloudy](weather_descriptor)
+    - should i wear [shorts](weather_descriptor) [today](date)
+    - is it going to [snow](weather_descriptor) [tonight](timeofday)
+    - is [snow](weather_descriptor) in the forecast
+    - is [snow](weather_descriptor) coming [tonight](timeofday)
+    - is it going to [rain](weather_descriptor) on [monday](date)
+    - is it going to [rain](weather_descriptor) on [friday](date)
+    - will i need a [coat](weather_descriptor) this [morning](timeofday)
+    - do i need a [jacket](weather_descriptor)
+    - can i go out in [shorts](weather_descriptor)
+    - will i need to be [warm](weather_descriptor)
+    - what's the weather [today](date)
+    - what's the [temperature](weather_descriptor) [today](date)
+    - what's the current [temperature](weather_descriptor) outside
+    - weather [this_weekend](date)
+    - what is the weather in [utah](place_name)
+    - tell me the weather in [utah](place_name)
+    - how is the weather in [utah](place_name) right now
+    - how is it outside
+    - what is the current [temperature](weather_descriptor)
+    - will it be [hot](weather_descriptor)
+    - will it be [cold](weather_descriptor)
+    - what will the weather be on [friday](date)
+    - will it [rain](weather_descriptor) now
+    - need to carry a [umbrella](weather_descriptor) [this_evening](timeofday)
+    - do i need a [jacket](weather_descriptor) [this_afternoon](timeofday)
+    - will i need an [umbrella](weather_descriptor) [this_week](date)
+    - is it [storming](weather_descriptor) right now
+  - intent: recommendation_movies
+    examples:
+      - should i watch this movie
+      - what film should i watch
+      - what is a good iranian film from [two_thousand_and_sixteen](date)
+      - what is a good movie to see right now
+      - top ten movies
+      - what new movies are played in cinemas [this_week](date)
+      - recommend a [movie](event_name) which is released [last_friday](date)
+      - recommend a [movie](event_name) with [justin_bieber](movie_type)
+      - what is the latest [action](movie_type) [movie](media_type) running in [theaters](place_name)
+      - what movies are being shown at the [regal_cinema](place_name)
+      - what movies are showing in [cinema](business_type) [today](date)
+      - what movie should i watch [today](date)
+      - what time will a movie be shown [tomorrow](date)
+      - what movies are going around me
+      - tell me the movie with [best_i._m._d._b._ratings](movie_type) going on in [theaters](place_name)
+        near me
+      - what are the show times of [logan](movie_name)
+      - olly what movie are playing near me
+      - tell me movies playing in [oceanside](place_name) [tonight](timeofday)
+      - movie times [tonight](timeofday)
+      - what new movies available [today](date)
+      - any good movies
+      - do you have any suggestion [action](movie_type) movies
+      - what movies is out there in the [local_cinema](place_name)
+      - show me nearest [theater](business_type)
+      - show me best in class [theater](business_type)
+      - which [rom_com](movie_type) movie can i watch in theaters around [new_york](place_name)
+      - name a [rom_com](movie_type) movie playing in and around [new_york](place_name)
+        theaters
+      - inform me about the most popular [rom_com](movie_type) movie playing now in theaters
+        across [new_york](place_name)
+      - show times for nearest [theater](business_type)
+      - what is the biggest [blockbuster](movie_type) [this_week](date)
+      - how is the new movie [swat](movie_name)
+      - olly how is the new movie [swat](movie_name)
+      - olly is [swat](movie_name) a good movie
+      - is [swat](movie_name) a good movie
+      - show timings
+      - tickets
+      - olly what are new [drama](movie_type) movies opening this [weekend](time)
+      - what is the nearest theater that plays the new [vin_diesel](movie_name) movie
+      - olly what movies are playing [tonight](timeofday) at [nine_p._m.](time) at the
+        [amc_nine](place_name)
+      - what movies are playing [tonight](timeofday) at [nine_p._m.](time) at the [amc_nine](place_name)
+      - cisco system
+      - olly what movies are playing right now
+      - what movies are playing right now
+      - find an oscar nominee movie
+      - what do you suggest that i watch [this_weekend](date)
+      - what's a new [sci_fi](movie_type) movie
+      - what is a movie like [star_wars](movie_name)
+      - i need a good [chick_flick](movie_name) any thoughts
+      - what movies are playing nearby
+      - what is playing at [amc_twenty](place_name)
+      - what movies are playing [tonight](timeofday)
+      - what movies are playing at [theaters](place_name) near me
+      - what are the show times for [logan](event_name) at the [nearby_theater](place_name)
+      - what are movies that are playing near me with high reviews
+      - please recommend a movie
+      - please recommend a movie olly
+      - movies with good rotten tomato ratings
+      - movies with good reviews
+      - what is the highest rated movie now out
+      - recommend a movie for me
+      - what are the current movies playing in my area
+      - recommend a movie playing in my area
+      - do you recommend any movies that are currently playing in my area
+      - do you recommend any movies that are currently playing in me area
+      - what's worth watching
+      - play a movie i'll like

@@ -7,8 +7,9 @@ found in `data/nlu.yml`. To run:
 ## To run
 
 1. clone the repo with `git clone git@github.com:clharris/massive_rasa.git`
-2. run `conda env create -p ./env`
-3. run `rasa train` to train a model
-4. run `rasa interactive` for an interactive session with the chatbot
+2. run `conda env create --file=environment.yml`
+3. run `conda activate massive_rasa`
+4. run `rasa train` to train a model
+5. run `rasa interactive` for an interactive session with the chatbot
 
 See more details in the [rasa docs](https://rasa.com/docs/).

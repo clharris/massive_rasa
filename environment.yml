@@ -6,6 +6,6 @@ dependencies:
   - python=3.9
   - flake8
   - pytest
-  - jupyter
   - pip:
     - rasa[metal]
+    - jupyter
