@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: general_greet
+  - action: utter_greet
+
+- story: interactive_story_1
+  steps:
+  - intent: general_greet
+  - action: utter_greet
+  - intent: datetime_query
+  - action: utter_datetime
+
+- story: interactive_story_2
+  steps:
+  - intent: iot_hue_lightoff
+  - action: utter_lightoff
+  - intent: audio_volume_down
+  - action: utter_volume_down
+  - intent: audio_volume_down
+  - action: utter_volume_down
+  - intent: datetime_query
+  - action: utter_datetime
+

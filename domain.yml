@@ -1,0 +1,29 @@
+version: '3.1'
+intents:
+- alarm_set
+- audio_volume_down
+- datetime_query
+- general_greet
+- iot_hue_lightoff
+- recommendation_movies
+- weather_query
+responses:
+  utter_alarm:
+  - text: Setting your alarm now!
+  utter_volume_down:
+  - text: Turning volume down
+  utter_datetime:
+  - text: I need to figure out how to tell you what day it is
+  utter_greet:
+  - text: How's it going, pal?!
+  utter_lightoff:
+  - text: Lights out!
+  utter_weather:
+  - text: Don't forget your booties! It's cold out there today!
+  recommend_movie:
+  - text: Insert random movie recommendation.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_greet

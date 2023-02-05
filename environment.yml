@@ -1,0 +1,11 @@
+name: massive_rasa
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - flake8
+  - pytest
+  - jupyter
+  - pip:
+    - rasa[metal]

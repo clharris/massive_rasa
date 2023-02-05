@@ -1,0 +1,758 @@
+version: "3.1"
+nlu:
+- intent: alarm_set
+  examples: |
+    - wake me up at five am this week
+    - wake me up at nine am on friday
+    - set an alarm for two hours from now
+    - set an alarm for twelve
+    - set an alarm forty minutes from now
+    - set alarm for eight every weekday
+    - set alarm at ten am
+    - set alarm tomorrow at six am
+    - set wake up thursday seven am
+    - set an alarm at six in the morning
+    - set an alarm for four in the afternoon
+    - olly alert me at three p. m. to go to the concert
+    - alert me at three p. m. to go to the concert
+    - set an alarm for me at eight am
+    - make an alarm for four p. m.
+    - make me a wake up alarm for eight forty five am
+    - set an alarm for nine am
+    - set a wake up call for ten am
+    - i need a reminder alarm at one
+    - make an alarm for three p. m.
+    - turn on an alarm for nine am
+    - set an alarm for one p. m.
+    - start alarm
+    - set alarm to begin
+    - change alarm to start at midnight
+    - i want to wake up at six am tomorrow please
+    - please set the alarm for next morning to seven am
+    - please ring the wake up alarm at eight am next saturday
+    - create an alarm at four o'clock tomorrow morning
+    - make an alarm to wake me up after five hours
+    - schedule an alarm to wake me up after three hours
+    - set alarm for eight am
+    - alarm set eight am
+    - set my alarm for seven am
+    - turn my morning alarm on
+    - set my alarm please
+    - set the alarm for five o'clock in the morning
+    - set my alarm for six thirty in the morning tomorrow
+    - i want the alarm set for six
+    - put alarm on
+    - set alarm at five thirty am
+    - place alarm at five o'clock morning
+    - set the time
+    - set the alarm tone
+    - set alarm of only monday morning six am
+    - set alarm of every tuesday of march month morning eight am
+    - set alarm of whole week morning ten am in april month
+    - please set alarm at five p. m.
+    - wake me up at six am
+    - put alarm at five am
+    - set alarm at five am
+    - wake me up at five am
+    - alert me at five hours
+    - set alarm at six thirty am
+    - set alarm half an hour from my meal time
+    - set my alarm for six am tomorrow
+    - wake me up
+    - open alarm
+    - set an alarm for tomorrow at six in the morning
+    - get me up in half an hour
+    - make an alarm
+    - fix an alarm
+    - set an alarm
+    - wake me up at four am
+    - alarm for ten am
+    - set alarm for twelve weeks from today at eight am
+    - set alarm for six am tomorrow
+    - add an alarm for tomorrow morning at six am
+    - put an alarm and wake me up at six am tomorrow morning
+    - set an alarm for time
+    - set my alarm for time
+    - alarm set for time
+    - set my alarm for tuesday at six p. m.
+    - i need to set an alarm for next friday at noon
+    - set an alarm for tomorrow morning at eight
+    - please set the alarm for next friday at six thirty am
+    - need an alarm set for sunday at five in the morning
+    - make an alarm for me at five am tomorrow
+    - set the alarm for two hours from now
+    - set an alarm for one hour from now
+    - wake me up at five hundred and thirty
+    - set an alarm for five hundred and thirty
+    - set an alarm for five thirty
+    - i need to get going at eight am tomorrow set up an alarm thirty minutes before that
+    - mike will send me an email tomorrow can you please set up an alarm fifteen minutes after receiving that email
+    - if my package shows that it is for delivery tomorrow can you set up an alarm one hour after thank you
+    - please set an alarm for seven hundred and thirty am tomorrow
+    - i'd like an alarm set for this saturday at ten
+    - set an eight hundred am alarm for next tuesday
+    - wake me up at this time
+    - set a new alarm for that time
+    - set alarm for six am everyday
+    - set alarm for tomorrow morning at six am
+    - set alarm for noon tomorrow
+    - can you set the alarm for one hundred and thirty
+    - set alarm for sixth of june two thousand seventeen at five am
+    - set an alarm for me for tomorrow at seven p. m.
+    - i need an alarm for sunday at eight am can you please set one for me
+    - please set the alarm for eight p. m. wednesday evening
+    - at seven am tomorrow morning ring the alarm
+    - set an alarm for eight am
+    - please set my alarm for five p. m.
+    - i need an alarm for nine p. m.
+    - change alarm setting
+    - let me know when it is ten
+    - please set an alarm at seven am tomorrow morning
+    - send me a wake up alert at seven am tomorrow morning
+    - i would like a wake up alarm at seven am tomorrow
+    - wake me at daybreak
+    - get me to alarm setting
+    - i need to get up at seven am
+    - is my alarm set for seven am
+    - set up an alarm clock at one p. m.
+    - set an alarm for seven am
+    - make an alarm for the morning
+    - create an alarm for five p. m.
+    - olly i need an alarm set for five hundred and thirty am tomorrow
+    - i need an alarm set for five hundred and thirty am tomorrow
+    - i want an alarm for three today
+    - google set my alarm to go off in an hour
+    - wake me up at seven am
+    - i need a six am wake up call
+    - get me up at eight am
+    - set alarm for nine am
+    - please set an alarm for me
+    - set an alarm for me for tomorrow
+    - i need you to set an alarm
+    - can you set an alarm for me
+    - set an alarm for nine p. m.
+    - alert me in three hours
+    - change my alarms to mountain time
+    - please wake me up at eight am
+    - set my alarm for eight am
+    - alarm me at eight am
+    - please set an alarm at six am
+    - set an alarm at six am
+    - could you please set an alarm at six am
+    - i need to set an alarm tomorrow at one thousand two hundred p. m. to remind me to take my medication
+    - i want to set an alarm when i'm driving home tomorrow to remember to stop at the store and get food
+    - please put on an alarm for eight am
+    - please set my alarm clock for eight am
+    - i need an alarm set for eight am
+    - set an alarm for ten o'clock tomorrow morning
+    - wake me up at ten
+    - i need to get up at ten tomorrow
+    - wake me up at nine am
+    - postpone my alarm by fifteen minutes
+    - set an alarm for seven thirty am
+    - wake me up at eight o'clock
+    - remind me at six thirty p. m.
+    - tell me when it is five p. m.
+    - set an alarm for six thirty am
+    - set alarm for one hour from now
+    - set an alarm for thursday at seven p. m.
+    - set an alarm for five am
+    - please set an alarm for ten p. m.
+    - can you set an alarm for seven am
+    - remind me at five p. m.
+    - reminder
+    - please we're the following alarm
+    - set alarm for eight am tomorrow
+    - set an alarm for tomorrow monday at eight am
+    - set the alarm for nine am on weekends
+    - the set alarm for nine p. m. on thursday night
+    - wake me up at six thirty
+    - set the alarm
+    - wake me up in thirty minutes
+    - set an alarm for eight p. m.
+    - set an alarm for five minutes from now
+    - can you set my alarm
+    - please set my alarm
+    - add a five am alarm in place of my nine p. m. alarm
+    - turn on my first scheduled alarm
+    - turn on an alarm for three thirty p. m. today
+    - alarm time for twelve p. m.
+    - set my alarm for twelve p. m.
+    - make a new alarm
+- intent: audio_volume_down
+  examples: |
+    - set the volume to low
+    - you're too loud
+    - quieter
+    - softer
+    - turn down volume
+    - lower the volume
+    - it is too loud decrease the volume
+    - could you please lower your volume
+    - could you please lower the tone
+    - decrease the volume to ten percent
+    - ok google lower all volume on speakers please
+    - lower all volume on speakers please
+    - it's really loud can you please turn the music down
+    - lower the speaker volume
+    - turn off the bass from the audio
+    - your volume is too high please repeat that lower
+    - please slow down volume of speaker
+    - i want to slow down my speaker
+    - make the volume lower
+    - please turn down the volume
+    - lower the volume to twenty
+    - decrease the volume to ten
+    - please turn the volume down
+    - no no turn it down
+    - turn the speakers down to five percent
+    - lower volume by fifty percent
+    - decrease the volume
+    - down
+    - decrease volume
+    - lower volume
+    - decrease volume to very soft
+    - low the volume
+    - turn the volume down a little please
+    - start the radio now on low volume
+    - lower the speakers
+    - lower audio
+    - turn down volume twenty percent
+    - lower speaker volume
+    - turn down speakers
+    - turn down the speakers
+    - lower your volume please
+    - talk quieter please
+    - please lower music volume
+    - speak softer please
+    - please reduce the sound
+    - please lower the speaker volume
+    - lower the volume on the speakers
+    - please adjust the speakers to a lower more comfortable level
+    - slow down the speaker volume
+    - please talk softer
+    - too loud
+- intent: datetime_query
+  examples: |
+    - what's the time in australia
+    - tell me the time in moscow
+    - tell me today's date
+    - what date is it today
+    - what's the day today
+    - what's the date
+    - what is the time
+    - tell me the time
+    - what time is it
+    - what's date today
+    - what day is today
+    - tell me a date
+    - what time is it in las vegas
+    - what time is it in beijing
+    - what's the time
+    - what's the time in tokyo now
+    - what time is it in moscow now
+    - how many days are left in this year
+    - what day is new year's eve this year
+    - what day is memorial day this year
+    - what day of the week is the twenty second march
+    - twenty ninth march comes on what day
+    - what day of the week is first april
+    - can you tell me the time
+    - what is the current time
+    - what is the current date
+    - is it monday today
+    - what day is it today
+    - what day of the month is next tuesday
+    - what is today's date
+    - what day is it
+    - tell me the date and the time
+    - siri what's the date
+    - tell me the hour
+    - what time is it in the other time zones
+    - what time zone is arizona
+    - what time is it in new york city
+    - what is the time in india right now
+    - what time is it right now in australia
+    - what time is it in des moines
+    - what's the time in denver
+    - what time is it right now
+    - give me the time
+    - how many birthday's are on twenty third
+    - is it second saturday on twelfth
+    - is there christmas on twenty second
+    - what is the date
+    - what is the time in the eastern time zone
+    - what day of the week is thanksgiving
+    - what is the last day of the month
+    - what is the time central
+    - what is the current mountain time
+    - what is time now in california
+    - time now in new york
+    - current time in japan
+    - can you tell me what date it is
+    - can you tell me what time is it
+    - what time is it now
+    - display current time
+    - what is the time now in new york
+    - give me the time in washington
+    - give me the time at washington right now
+    - what day of the month is it
+    - what time is it in miami florida
+    - what time is it in cleveland ohio
+    - what time is it in honolulu
+    - tell me what time it is right now
+    - what time are we looking at right now
+    - what time is it in new york
+    - what time is it right now in new york
+    - please tell me the current time in new york
+    - please tell me what time it is
+    - what is the time in london right now
+    - what time is it in new york now
+    - can you tell me what time is it in new york
+    - what hour is it in new york now
+    - what time is it in london right now
+    - please show me today's date
+    - can i have today's date
+    - what day of the week does the fifteenth of march fall on
+    - when is the next month that has thirty one days
+    - today date
+    - tell me the date
+    - is it the twenty ninth already
+    - tell me what day of the week it is
+    - what's the time in sydney now
+    - time in new york now
+    - what is the current time in lagos nigeria
+    - what is the current time in new york
+    - present time in new york
+    - what will be day on fifteenth march
+    - give me the date of monday on third week of this month
+    - i want the date of last monday of this month
+    - what is the time in new york now
+    - tell me what time it is
+    - hello what time it is now
+    - can you tell me today's date
+    - tell me the current time
+    - please give me the time
+    - tell me the current time in central time
+    - what day is it on fifth december
+    - does it fall a sunday on fifth december
+    - i want exact time in washington right now
+    - what will be the time now in washington
+    - what is current time
+    - can you tell me current time
+    - hey olly what's today's date
+    - hey what's today's date
+    - can you tell me what the date is today
+    - tell me the current time in ottawa
+    - is the eighteenth a monday or a sunday
+    - what day is easter
+    - fifty thousand two hundred and seventeenth
+    - one hundred thousand two hundred and seventeenth
+    - one hundred and fifty thousand two hundred and seventeenth
+    - can you tell me the current time
+    - what date is the third friday of this month
+    - what was the date of two wednesdays back from today
+    - time
+    - what is the time now
+    - how much in the clock
+    - please tell me the time
+    - tell me the time in canberra
+    - when is halloween
+    - when is easter in the year two thousand and eighteen
+    - show me the current time in germany
+    - what is the current date today
+    - what is the current day month and year
+    - what time is it in dallas
+    - please provide current time in india
+    - tell me current time in los angels
+    - tell me present time in malaysia
+    - new york time please
+    - what time is time
+    - can you please tell me the time
+    - what's the time in china right now
+    - what is the date today
+    - date today
+    - today is
+    - how many minutes pass four p. m.
+    - tell me current time
+    - time and date of today
+    - what is the time in clock
+    - how many seconds are left to complete this hour
+    - what's the time now
+    - what date is today
+    - what month is today
+    - what time is it in boston
+    - show me boston's current time
+    - what is the current date time group
+    - what is london time
+    - what is the time in perth
+    - what time and day is it today
+    - current time and date please
+    - can you check the time
+    - what time is it in karachi right now
+    - give me the time in london
+    - what day was it on my birth date
+    - was christmas one thousand nine hundred and seventy two on a weekend
+    - what's the date of the winter solstice two years from now
+    - could you tell me what time it is
+    - what is the current time right now
+    - i need to know the time right now what is it
+    - time please
+    - tell me the time now
+    - what's today date
+    - what's the date today
+    - tell me the today's date
+    - what day of the week was december four one thousand nine hundred and eighty two
+    - what week of the year does the summer season start
+    - how many weeks are left for christmas
+    - on what date is easter this year
+    - which day is friday the thirteenth this year
+    - what day this year has the longest daylight time
+    - get me the time in london now
+    - display the local time of london at this moment
+    - can you tell me the date today
+    - what's the time in london
+    - could you tell me the time in london
+    - may i know the time in london
+    - tell me what time is it
+    - tell me the time in india
+    - what could be the time in india
+    - let me know the time in india
+    - what's time
+    - g. m. t. time
+    - what time does the sun set
+    - is the time currently correct for where i am located
+    - current time please
+    - what time is it in florida
+    - what is the time over in florida
+    - today is what date
+    - siri today is what date
+    - i need the time of day
+    - what day of the week is valentine's on
+    - what day of the week is valentines on
+    - what is tomorrows date
+    - what is tomorrow's date
+    - is today march sixth
+    - what is today
+    - is today the fourth or the fifth
+    - let me know today's date in american format
+    - current date please
+    - what is today date
+    - which date is today
+    - show me the time
+    - march tenth lands on what day of the week
+    - what is the date of next saturday
+    - the last friday of the month lands on what day
+    - what time is it in london
+    - what's the time in chicago
+    - what day does easter fall on this year
+    - what day is december thirteenth
+    - what day does april sixteenth fall on
+    - tell me the date today
+    - what is mondays actual date
+    - the second of next mont lands on what day
+    - what time is it in this city
+    - olly what time is it in this city
+    - olly new york time
+    - new york time
+    - tell me which time is it in new york
+    - tell me what time it currently is
+    - what is today's exact date
+    - tell me what the date is today
+    - what time is it in austin
+    - yo what's the current time
+    - what's today's date
+    - what time is it in central standard time
+    - what time is it in mountain standard time
+    - what time is it in pacific standard time
+    - what is eastern standard time right noe
+    - what is the time in the midwest right now
+    - what time is it in that city
+    - what's the date tomorrow
+    - what day of the week does christmas fall on this year
+    - what day does my birthday fall on this year
+    - what is the current central time
+    - what is the current pacific time
+    - what is the current eastern time
+    - what time is it in dooa
+    - what is the time difference between here and dakar
+    - what is the time in paris
+    - what is todays date
+    - how late am i
+    - tell me the time in jakarta
+    - report the time in miami
+    - what time is it in hong kong
+    - what is the date for next tuesday
+    - is the twenty third on the weekend
+    - what time is it in california
+    - olly what time is it in california
+    - what time does the match start
+    - is the twenty second on a wednesday
+    - the twenty second is on what day of the week
+    - what day of the week does the twenty second fall on this month
+    - is it ten
+    - what time is it right now in pacific time
+    - what is the current time in chennai
+    - what is the current date in india
+    - what is the time in beijing
+    - what is the time in la
+    - what's the current time in orlando floor
+    - tell me the time in london england
+    - what is the date and time for today
+    - is today's date the ninth
+    - what time i sit in china right now
+    - what is the time in zimbabwe right now
+    - olly what is the time in zimbabwe right now
+    - what time is it in the eastern half of the us right now
+    - today is which date
+    - show me the date of today
+    - let me know the time
+    - what is the timer in japan
+    - what time is it on the west coast
+    - please tell me the date and time
+    - what is the correct time
+    - can i get the time
+    - i need to know what is the date today
+    - what day does halloween fall on this year
+    - what day is the twentieth this month
+    - how many hours ahead is n. y. c.
+    - say the time
+    - what day of the week is halloween
+    - olly what day of the week is halloween
+    - when is the next holiday
+    - how many days are in this month
+    - what's the best day next week to go out for pizza
+    - what is the time in new york
+    - can you tell me the time in new york
+    - do you know what day it is
+    - please let me know today's date
+    - current time
+    - what day is the fifth
+    - show me what time it is
+    - what is the day today
+    - what is ten am in eastern time
+    - please let me know what time seven p. m. is in p. s. t.
+    - what time is it now in g. m. t.
+    - current time new york
+    - what's the current time in new york
+    - hey siri what time is it
+    - hey olly what time is it
+    - hey siri what's the time
+    - hey olly what's the time
+    - what is the time in boston
+    - what is the current time in boston
+    - tell me the time in boston
+    - can i know what's the time now
+    - please check the time
+    - hey what is the time
+    - is it afternoon yet
+    - what's the current time in eastern standard
+    - what time is it on the east coast of the united states
+    - please tell me the current date
+    - what's the time of day right now
+    - what time is it in chicago right now
+    - what is the time in the pacific time zone at this very moment
+    - in how many hours will it be midnight in london england
+    - what is the time in china
+    - what is the time in dubai
+    - what time is it in dubai
+    - tell me the time in tokyo
+    - what hour of the day is it in dallas
+    - what time is it in england
+    - give me the time in p. s. t.
+    - what time is it in cleveland
+    - the time in cairo please
+    - what is the time in bangalore
+    - what is the time in hyderabad
+    - what is the current time in london
+    - be my clock
+    - what is the time in london
+    - time wellington nz
+    - give me the time in phoenix az
+    - what day is the twenty second
+    - what is the current time in delhi
+    - give me the local time of london
+    - what is the first friday of next month
+    - how many saturdays are in march
+    - hey what time is it in london now
+    - hey olly what time is it in london now
+    - current date
+    - what time is it relative to new york
+    - good day
+    - how was the day
+    - how is this week's weather
+- intent: general_greet
+  examples: |
+    - what's up
+    - what's up olly
+    - how are you
+    - hey hey
+    - how are you doing
+    - morning what's up
+    - hi
+    - hello
+    - hey how are you
+    - how are you today
+    - good morning olly
+    - good morning
+    - good afternoon
+    - hey
+    - hey olly what's up
+    - good afternoon how are you
+    - hello what are you up to
+    - good evening
+    - hello how are you today
+    - yo
+    - hi how are you
+- intent: iot_hue_lightoff
+  examples: |
+    - turn the lights off please
+    - time to sleep
+    - time to sleep olly
+    - turn off the light in the bathroom
+    - turn the lights off in the bedroom
+    - olly turn the lights off in the bedroom
+    - olly lights off
+    - lights off
+    - olly good night lights off
+    - switch off the lights
+    - i want the light switched off can you do it for me
+    - turn off the garage light
+    - turn off the lights in the bathroom
+    - turn off the bathroom lights
+    - lights off bathroom
+    - turn off light
+    - turn off lamp
+    - by switch off
+    - by remote sensor
+    - turn the lights off in the living room
+    - please set the lights off in the living room
+    - turn off one light on porch
+    - please turn off the light
+    - turn the lamp off
+    - turn off room lights
+    - control lights turn off room lights
+    - turn the lights off
+    - turn off light in bedroom
+    - shutoff light in the kitchen
+    - switch the light off in bedroom
+    - please turn lights off
+    - turn the lights off to my room
+    - can you please turn off the lights in this room
+    - please shut the lights
+    - turn the living room's light off
+    - turn this room light off
+    - could you turn the light off
+    - shut off the lights in the kitchen
+    - turn off the lights in the bedroom
+    - please turn off the light of the bathroom
+    - please turn off the light of my son's room
+    - turn off living room lights
+    - turn the left light off
+    - turn off the lights in the living room
+    - turn off the lamps
+    - time constrain
+    - all lights has to be turned off during the day
+    - turn all lights off during the day
+    - during the daytime all lights has to be turned off
+    - please turn off only right side light
+    - turn off the upstairs bathroom light
+    - i want the light in the kitchen powered off
+    - turn off all lights
+    - off all the lights on the right side
+    - turn off the dining room
+    - please turn off the kitchen
+    - switch off the master's bedroom
+    - switch off bedroom light
+    - put off the living room light
+    - shift the balcony light to off
+    - shift the light off
+    - switch off the light
+    - switch off main light
+    - turn off lobby light
+    - turn off garage light
+    - i don't need light
+    - i don't need the lights
+    - shut the living room lights
+    - turn bedroom lights off
+    - i'm going to sleep now
+    - turn off the light of my bed room please
+    - i need you to turn off the light of my bed room
+    - can you please turn off the light of my bed room
+    - olly can you please turn off the light of my bed room
+    - turn off kitchen light
+    - turn off the light in the kitchen
+    - kitchen light off
+    - please turn off kitchen light for me
+    - can you turn off kitchen light for me
+    - turn off the bathroom light
+    - turn off the closet light
+    - put the lights off now
+    - turn off the shed light
+    - turn off the living room light
+    - turn off the lights
+    - olly turn off the lights
+    - switch the lights off
+    - turn the lights off now
+    - will you please turn the lights off
+    - lights off in the kitchen please
+    - turn off the porch light
+    - turn off my bedside lamp please
+    - please turn off the porch light
+    - turn off the living room lights
+    - turn off the kitchen lights
+    - power off the current
+    - shut the lights off
+    - shut off lights
+    - discontinue use of lights
+    - turn lights in the room off
+    - please turn off the lights in the kitchen
+    - please turn off all of the lights in the house
+    - turn off smart lamp in den
+    - alexa turn off the lamp in the living room
+    - turn off the lamp in the living room
+    - turn office lights off
+    - turn off the office lights
+    - office lights off
+    - turn light off
+    - lights off for the kids bedroom please then change the lights to my room to red
+    - turn off one light in my bedroom
+    - can you turn off one of my lights in my bathroom
+    - turn off lighting
+    - make the lights off
+    - turn off the lights in the kitchen
+    - turn my bedroom lights off
+    - can you turn my bathroom lights off
+    - turn off lights in my room
+    - please turn off all the lights in the house
+    - turn off the lights in this room please
+    - this room lights off
+    - no lights in the kitchen
+    - turn down the lights to medium
+    - turn room lights off now
+    - turn house lights off
+    - please turn off the lights in the bedroom
+    - turn off lights in kitchen
+    - turn off lights in all bathrooms
+    - please turn off all the lights outdoor
+    - please turn off my patio lights
+    - please turn off the lights in patio
+    - please turn off the lights in bedroom
+    - please turn off all the lights in my house
+    - turn the light off
+    - good night
+    - i want to sleep
+    - cut off the bathroom lights
+    - turn off the bathroom light please
+    - lights off in the guest room
+    - turn off lights
+    - turn lights off in living room
+    - can you turn off the lights
+    - can you make the lights go out
+    - sandle
+    - lights off in the living room
+    - turn the lights off in my bed room
+    - turn the kitchen lights off
+    - turn the living rooms lights off
+    - please shut off the kitchen lights
+    - kindly switch off the light
